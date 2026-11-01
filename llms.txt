@@ -1,0 +1,20 @@
+# Grouse Studio
+
+> Grouse Studio is a small-group strength training gym in Hawthorn East, Melbourne, Australia. It runs structured, coached small-group sessions built around the Strength Loop — a year-round cycle of strength, volume, power and foundation training. New members can book a first session at 50% off.
+
+## Key pages
+
+- [First Session](https://grousestudio.au/first-session/): Your first session, 50% off — coached from the first minute.
+- [Memberships](https://grousestudio.au/memberships/): Membership options and weekly pricing.
+- [Sessions](https://grousestudio.au/sessions/): How the small-group strength and conditioning sessions work.
+- [Schedule](https://grousestudio.au/schedule/): Weekly session timetable.
+- [Coaches](https://grousestudio.au/coaches/): The Grouse coaching team.
+- [Philosophy](https://grousestudio.au/philosophy/): The studio's training philosophy.
+- [Contact](https://grousestudio.au/contact/): Location, hours and how to get in touch.
+- [Journal](https://grousestudio.au/blog/): Articles on training, consistency and studio life.
+
+## Contact
+
+- Address: 26 Victoria Road, Hawthorn East VIC 3123, Australia
+- Phone: 0433 064 811
+- Email: hello@grousestudio.au

@@ -1,0 +1,170 @@
+---
+layout: "page"
+title: "Schedule"
+permalink: "/schedule/"
+body_class: "wp-singular page-template-default page page-id-2384 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+seo_head: |
+  <title>Gym Class Schedule | Grouse Studio Melbourne</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.gss{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gss *,.gss *::before,.gss *::after{box-sizing:border-box;}
+.gss .gss-wrap{max-width:1100px;margin:0 auto;padding:0 40px;}
+@media(max-width:768px){.gss .gss-wrap{padding:0 24px;}}
+.gss section{padding:84px 0;}
+@media(max-width:768px){.gss section{padding:56px 0;}}
+.gss h1,.gss h2,.gss h3{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gss h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gss h2{font-size:clamp(1.5rem,2.6vw,2rem)!important;}
+.gss h3{font-size:1.15rem!important;}
+.gss p{margin:0!important;}
+.gss .gss-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.gss .gss-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.gss .gss-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+
+/* hero */
+.gss .gss-hero{position:relative!important;background:var(--navy)!important;padding:116px 0 72px!important;}
+.gss .gss-hero .gss-plate{background:var(--orange)!important;color:#fff!important;}
+.gss .gss-hero h1{color:#fff!important;margin-bottom:14px!important;}
+.gss .gss-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gss .gss-hero-sub{font-size:1.1rem!important;line-height:1.6!important;
+  color:rgba(255,255,255,.7)!important;max-width:520px!important;margin-bottom:30px!important;}
+
+/* timetable */
+.gss .gss-timetable{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gss .gss-timetable h2{margin-bottom:28px!important;}
+.gss .mindbody-widget{min-height:200px!important;}
+
+/* weekly rhythm */
+.gss .gss-rhythm{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.gss .gss-rhythm h2{margin-bottom:8px!important;}
+.gss .gss-rhythm-sub{font-size:1rem!important;color:var(--mid)!important;margin-bottom:32px!important;}
+.gss .gss-days{display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:2px!important;
+  border-radius:4px!important;overflow:hidden!important;}
+@media(max-width:768px){.gss .gss-days{grid-template-columns:repeat(3,1fr)!important;}}
+.gss .gss-day{background:#fff!important;padding:24px 16px!important;text-align:center!important;}
+.gss .gss-day-name{display:block!important;font-family:'Space Mono',monospace!important;font-size:.7rem!important;
+  font-weight:500!important;letter-spacing:.12em!important;text-transform:uppercase!important;
+  color:var(--light)!important;margin-bottom:10px!important;}
+.gss .gss-day-focus{display:block!important;font-family:"geom-graphic",sans-serif!important;text-transform:uppercase!important;
+  font-size:1rem!important;font-weight:700!important;letter-spacing:.02em!important;color:var(--navy)!important;margin-bottom:4px!important;}
+.gss .gss-day-type{display:block!important;font-family:'Space Mono',monospace!important;font-size:.66rem!important;
+  font-weight:500!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:var(--orange)!important;}
+.gss .gss-day-times{display:block!important;font-size:.92rem!important;color:var(--mid)!important;
+  margin-top:12px!important;line-height:1.85!important;}
+
+/* classpass */
+.gss .gss-classpass{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;padding:56px 0!important;}
+.gss .gss-classpass-inner{display:flex!important;align-items:center!important;justify-content:space-between!important;
+  gap:32px!important;flex-wrap:wrap!important;}
+.gss .gss-classpass-left{display:flex!important;align-items:center!important;gap:24px!important;flex-wrap:wrap!important;}
+.gss .gss-classpass h3{margin-bottom:4px!important;}
+.gss .gss-classpass p{font-size:1rem!important;color:var(--mid)!important;line-height:1.6!important;}
+.gss .gss-classpass p strong{color:var(--navy)!important;font-weight:600!important;}
+.gss .gss-classpass-btn{display:inline-block!important;background:#0066FF!important;color:#fff!important;
+  font-size:.95rem!important;font-weight:600!important;text-decoration:none!important;padding:13px 26px!important;
+  border-radius:3px!important;white-space:nowrap!important;flex-shrink:0!important;transition:background .2s!important;}
+.gss .gss-classpass-btn:hover{background:#0052cc!important;color:#fff!important;}
+@media(max-width:768px){.gss .gss-classpass-inner{flex-direction:column!important;align-items:flex-start!important;}
+  .gss .gss-classpass-btn{width:100%!important;text-align:center!important;}}
+
+/* close */
+.gss .gss-close{background:var(--navy)!important;text-align:center!important;}
+.gss .gss-close h2{color:#fff!important;max-width:560px!important;margin:0 auto 12px!important;}
+.gss .gss-close h2 em{font-style:normal!important;color:var(--orange)!important;}
+.gss .gss-close p{font-size:1.05rem!important;color:rgba(255,255,255,.55)!important;max-width:420px!important;margin:0 auto 32px!important;}
+</style>
+
+<div class="gss">
+
+  
+  <section class="gss-hero">
+    <div class="gss-wrap">
+      <span class="gss-plate">Schedule</span>
+      <h1>Find a time <em>and book it.</em></h1>
+      <p class="gss-hero-sub">Open six days, Monday to Saturday. All sessions need a booking through the app.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gss-btn">Book your first session, 50% off</a>
+    </div>
+  </section>
+
+  
+  <section class="gss-timetable">
+    <div class="gss-wrap">
+      <span class="gss-plate">This week</span>
+      <h2>The timetable.</h2>
+      <div class="mindbody-widget" data-widget-type="Schedules" data-widget-id="229293c179"></div>
+      <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
+    </div>
+  </section>
+
+  
+  <section class="gss-rhythm">
+    <div class="gss-wrap">
+      <h2>Weekly rhythm.</h2>
+      <p class="gss-rhythm-sub">Same structure every week.</p>
+      <div class="gss-days">
+        <div class="gss-day">
+          <span class="gss-day-name">Mon</span>
+          <span class="gss-day-focus">Load</span>
+          <span class="gss-day-type">Strength</span>
+          <span class="gss-day-times">6:00am<br>7:00am<br>9:30am<br>5:30pm<br>6:30pm</span>
+        </div>
+        <div class="gss-day">
+          <span class="gss-day-name">Tue</span>
+          <span class="gss-day-focus">Power</span>
+          <span class="gss-day-type">Strength</span>
+          <span class="gss-day-times">6:00am<br>7:00am<br>9:30am<br>5:30pm<br>6:30pm</span>
+        </div>
+        <div class="gss-day">
+          <span class="gss-day-name">Wed</span>
+          <span class="gss-day-focus">Foundation</span>
+          <span class="gss-day-type">Strength</span>
+          <span class="gss-day-times">6:00am<br>7:00am<br>9:30am<br>5:30pm<br>6:30pm</span>
+        </div>
+        <div class="gss-day">
+          <span class="gss-day-name">Thu</span>
+          <span class="gss-day-focus">Volume</span>
+          <span class="gss-day-type">Strength</span>
+          <span class="gss-day-times">6:00am<br>7:00am<br>9:30am<br>5:30pm<br>6:30pm</span>
+        </div>
+        <div class="gss-day">
+          <span class="gss-day-name">Fri</span>
+          <span class="gss-day-focus">Hybrid</span>
+          <span class="gss-day-type">Hybrid</span>
+          <span class="gss-day-times">6:00am<br>7:00am<br>9:30am</span>
+        </div>
+        <div class="gss-day">
+          <span class="gss-day-name">Sat</span>
+          <span class="gss-day-focus">Hybrid</span>
+          <span class="gss-day-type">Hybrid</span>
+          <span class="gss-day-times">7:00am<br>8:00am<br>9:00am</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gss-close">
+    <div class="gss-wrap">
+      <h2>Get strong for <em>out there.</em></h2>
+      <p>Your first session is half price. Pick a time above and come in.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gss-btn">Book your first session, 50% off</a>
+    </div>
+  </section>
+
+</div>

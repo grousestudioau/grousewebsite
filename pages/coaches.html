@@ -1,0 +1,160 @@
+---
+layout: "page"
+title: "Coaches"
+permalink: "/coaches/"
+body_class: "wp-singular page-template-default page page-id-2742 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+seo_head: |
+  <title>Our Coaches | Meet the Grouse Studio Team</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.gco{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gco *,.gco *::before,.gco *::after{box-sizing:border-box;}
+.gco h1,.gco h2{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gco h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gco p{margin:0!important;}
+.gco img{max-width:100%!important;height:auto!important;display:block!important;}
+.gco .gco-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.gco .gco-wrap{padding:0 24px!important;}}
+
+.gco .gco-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.gco .gco-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.gco .gco-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+
+/* hero */
+.gco .gco-hero{background:var(--navy)!important;padding:116px 0 72px!important;}
+.gco .gco-hero .gco-plate{background:var(--orange)!important;color:#fff!important;}
+.gco .gco-hero h1{color:#fff!important;margin-bottom:18px!important;max-width:720px!important;}
+.gco .gco-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gco .gco-hero-intro{font-size:1.1rem!important;line-height:1.65!important;
+  color:rgba(255,255,255,.7)!important;max-width:560px!important;}
+@media(max-width:768px){.gco .gco-hero{padding:104px 0 56px!important;}}
+
+/* coaches */
+.gco .gco-coaches{background:var(--bg)!important;}
+.gco .gco-coach{padding:84px 0!important;border-bottom:1px solid var(--rule)!important;}
+.gco .gco-coach:last-child{border-bottom:none!important;}
+@media(max-width:768px){.gco .gco-coach{padding:56px 0!important;}}
+.gco .gco-coach-inner{display:grid!important;grid-template-columns:340px 1fr!important;
+  gap:72px!important;align-items:start!important;}
+@media(max-width:900px){.gco .gco-coach-inner{grid-template-columns:280px 1fr!important;gap:48px!important;}}
+@media(max-width:768px){.gco .gco-coach-inner{grid-template-columns:1fr!important;gap:28px!important;}}
+.gco .gco-coach-photo{position:relative!important;}
+.gco .gco-coach-photo img{width:100%!important;aspect-ratio:1/1!important;object-fit:cover!important;
+  border-radius:4px!important;}
+.gco .gco-coach-photo::after{content:''!important;position:absolute!important;inset:0!important;
+  box-shadow:inset 0 0 34px rgba(35,38,57,.22)!important;border-radius:4px!important;pointer-events:none!important;}
+@media(max-width:768px){.gco .gco-coach-photo{max-width:300px!important;}}
+.gco .gco-coach-name{font-size:clamp(1.6rem,2.5vw,2rem)!important;margin-bottom:6px!important;}
+.gco .gco-coach-role{display:block!important;font-family:'Space Mono',monospace!important;font-size:.76rem!important;
+  font-weight:500!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:var(--orange)!important;
+  margin-bottom:24px!important;}
+.gco .gco-coach-bio{font-size:1rem!important;line-height:1.75!important;color:var(--mid)!important;
+  margin-bottom:16px!important;}
+.gco .gco-coach-bio:last-of-type{margin-bottom:26px!important;}
+.gco .gco-coach-bio strong{color:var(--navy)!important;font-weight:600!important;}
+.gco .gco-out{display:block!important;font-family:'Space Mono',monospace!important;font-size:.72rem!important;
+  font-weight:500!important;letter-spacing:.1em!important;text-transform:uppercase!important;
+  color:var(--light)!important;margin-bottom:10px!important;}
+.gco .gco-coach-details{display:flex!important;flex-wrap:wrap!important;gap:8px!important;}
+.gco .gco-coach-detail{font-size:.85rem!important;font-weight:500!important;color:var(--mid)!important;
+  background:var(--bg-warm)!important;border:1px solid var(--rule)!important;
+  padding:6px 14px!important;border-radius:3px!important;}
+
+/* close */
+.gco .gco-close{background:var(--navy)!important;padding:84px 0!important;text-align:center!important;}
+.gco .gco-close h2{font-size:clamp(1.5rem,2.7vw,2.1rem)!important;color:#fff!important;
+  max-width:600px!important;margin:0 auto 12px!important;}
+.gco .gco-close h2 em{font-style:normal!important;color:var(--orange)!important;}
+.gco .gco-close-sub{font-size:1.05rem!important;color:rgba(255,255,255,.55)!important;
+  max-width:460px!important;margin:0 auto 32px!important;}
+@media(max-width:768px){.gco .gco-close .gco-btn{width:100%!important;max-width:400px!important;}}
+</style>
+
+<div class="gco">
+
+  
+  <section class="gco-hero">
+    <div class="gco-wrap">
+      <span class="gco-plate">Behind Grouse</span>
+      <h1>The people who<br>built <em>Grouse.</em></h1>
+      <p class="gco-hero-intro">Josh founded Grouse; Ben came on as an owner because he believes in what it&#8217;s building. The two of them write the programming, coach the sessions, and train alongside everyone else most days of the week. Both are dads, fitting real training around real family life. Ask either what they&#8217;re training for, and they&#8217;ll have an answer.</p>
+    </div>
+  </section>
+
+  
+  <section class="gco-coaches">
+    <div class="gco-wrap">
+
+      
+      <div class="gco-coach">
+        <div class="gco-coach-inner">
+          <div class="gco-coach-photo">
+            <img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/06/Josh_2025_Square.jpg" alt="Josh Chiodo">
+          </div>
+          <div>
+            <h2 class="gco-coach-name">Josh Chiodo</h2>
+            <span class="gco-coach-role">Head Coach &amp; Founder</span>
+            <p class="gco-coach-bio">Josh trains for things with start lines: ultra marathons, marathons, halves, Spartans, trail running. He&#8217;s still out most weeks for multiple runs, and in for multiple sessions at Grouse alongside everyone else. Running and lifting in equal measure, because training more than one thing keeps you better for longer. That belief shapes everything Grouse does.</p>
+            <p class="gco-coach-bio">He started Grouse to build the gym he couldn&#8217;t find: good programming, honest coaching, people treated like adults. <strong>As a coach he works with the whole picture</strong>: how you move, and how training fits your life. He works out what each person needs and coaches to it.</p>
+            <span class="gco-out">Out there</span>
+            <div class="gco-coach-details">
+              <span class="gco-coach-detail">Ultra marathons</span>
+              <span class="gco-coach-detail">Marathons &amp; halves</span>
+              <span class="gco-coach-detail">Spartans</span>
+              <span class="gco-coach-detail">Trail running</span>
+              <span class="gco-coach-detail">Dad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="gco-coach">
+        <div class="gco-coach-inner">
+          <div class="gco-coach-photo">
+            <img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/06/Ben_2025_Square-scaled.jpg" alt="Ben Plowman">
+          </div>
+          <div>
+            <h2 class="gco-coach-name">Ben Plowman</h2>
+            <span class="gco-coach-role">Head Coach &amp; Owner</span>
+            <p class="gco-coach-bio">Ben played basketball for a decade, and still plays and coaches it now, alongside lifting most days and the occasional run, to stay useful and mobile for as long as possible. Sport taught him how athletic bodies adapt; an Exercise Science degree gave him the framework to explain why.</p>
+            <p class="gco-coach-bio"><strong>His coaching is calm and methodical.</strong> He&#8217;ll spot what&#8217;s off in your movement before you feel it, and explain it clearly rather than just telling you to do it differently. He&#8217;ll make sure you understand what you&#8217;re doing and why.</p>
+            <span class="gco-out">Out there</span>
+            <div class="gco-coach-details">
+              <span class="gco-coach-detail">Basketball, playing &amp; coaching</span>
+              <span class="gco-coach-detail">Exercise Science</span>
+              <span class="gco-coach-detail">Built for the long game</span>
+              <span class="gco-coach-detail">Dad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="gco-close">
+    <div class="gco-wrap">
+      <h2>Come in and tell them your <em>out there.</em></h2>
+      <p class="gco-close-sub">Your first session is half price, and a coach will ask what you&#8217;re training for.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gco-btn">Book your first session, 50% off</a>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,282 @@
+---
+layout: "page"
+title: "Grouse Games"
+permalink: "/grouse-games/"
+body_class: "wp-singular page-template-default page page-id-3128 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+seo_head: |
+  <title>Grouse Games | Grouse Studio</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.ggm{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;--navy-deep:#232639;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  --gg-blue:#4285F4;--gg-red:#EC1C24;--gg-yellow:#FDC400;--gg-green:#1EA02D;
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.ggm *,.ggm *::before,.ggm *::after{box-sizing:border-box;}
+.ggm .ggm-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.ggm .ggm-wrap{padding:0 24px!important;}}
+.ggm section{padding:84px 0!important;position:relative!important;}
+@media(max-width:768px){.ggm section{padding:56px 0!important;}}
+.ggm h1,.ggm h2,.ggm h3{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.ggm h1{font-size:clamp(2.2rem,5vw,3.6rem)!important;}
+.ggm h2{font-size:clamp(1.5rem,2.6vw,2rem)!important;}
+.ggm h3{font-size:1.05rem!important;}
+.ggm p{margin:0!important;}
+.ggm .ggm-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.ggm .ggm-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.ggm .ggm-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+.ggm .ggm-mono{font-family:'Space Mono',monospace!important;font-size:.72rem!important;
+  letter-spacing:.1em!important;text-transform:uppercase!important;color:var(--light)!important;}
+.ggm .ggm-blaze{display:inline-block!important;width:15px!important;height:24px!important;
+  border-radius:3px 4px 3px 5px!important;background:var(--orange)!important;
+  box-shadow:inset 0 0 5px rgba(120,30,0,.35)!important;transform:rotate(-4deg)!important;}
+
+/* games theme — logo colour accents */
+.ggm .ggm-stripe{height:10px!important;width:100%!important;border:0!important;margin:0!important;
+  background:linear-gradient(90deg,var(--gg-blue) 0 18%,#fff 18% 20.5%,var(--navy) 20.5% 38.5%,#fff 38.5% 41%,var(--gg-red) 41% 59%,#fff 59% 61.5%,var(--gg-yellow) 61.5% 79.5%,#fff 79.5% 82%,var(--gg-green) 82% 100%)!important;}
+.ggm .ggm-hero-logo{display:block!important;width:clamp(240px,42vw,460px)!important;height:auto!important;margin-bottom:30px!important;}
+.ggm .ggm-see-row:nth-of-type(1) .ggm-blaze{background:var(--gg-blue)!important;box-shadow:none!important;}
+.ggm .ggm-see-row:nth-of-type(2) .ggm-blaze{background:var(--gg-red)!important;box-shadow:none!important;}
+.ggm .ggm-see-row:nth-of-type(3) .ggm-blaze{background:var(--gg-yellow)!important;box-shadow:none!important;}
+.ggm .ggm-see-row:nth-of-type(4) .ggm-blaze{background:var(--gg-green)!important;box-shadow:none!important;}
+
+/* hero (photo-ready: uncomment the photo block in the markup and it layers under the shade) */
+.ggm .ggm-hero{background:var(--navy)!important;padding:116px 0 80px!important;overflow:hidden!important;position:relative!important;}
+.ggm .ggm-hero-photo{position:absolute!important;inset:0!important;z-index:0!important;}
+.ggm .ggm-hero-photo img{width:100%!important;height:100%!important;object-fit:cover!important;filter:saturate(.95) contrast(1.02)!important;}
+.ggm .ggm-hero-shade{position:absolute!important;inset:0!important;z-index:1!important;
+  background:linear-gradient(180deg,rgba(45,48,71,.5) 0%,rgba(35,38,57,.92) 100%)!important;}
+.ggm .ggm-hero .ggm-wrap{position:relative!important;z-index:2!important;}
+.ggm .ggm-hero .ggm-plate{background:var(--orange)!important;color:#fff!important;}
+.ggm .ggm-hero h1{color:#fff!important;margin-bottom:16px!important;max-width:640px!important;}
+.ggm .ggm-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.ggm .ggm-hero-sub{font-size:1.15rem!important;line-height:1.6!important;
+  color:rgba(255,255,255,.75)!important;max-width:560px!important;margin-bottom:32px!important;}
+.ggm .ggm-hero .ggm-mono{color:rgba(255,255,255,.45)!important;display:block!important;margin-top:26px!important;}
+.ggm .ggm-hero-flag{position:absolute!important;right:6%!important;top:96px!important;width:80px!important;
+  opacity:.9!important;pointer-events:none!important;z-index:2!important;}
+@media(max-width:768px){.ggm .ggm-hero{padding:104px 0 60px!important;}.ggm .ggm-hero-flag{width:52px!important;right:24px!important;}}
+
+/* why — train for something */
+.ggm .ggm-why{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;overflow:hidden!important;}
+.ggm .ggm-why .ggm-topo{position:absolute!important;top:-60px!important;right:-140px!important;width:560px!important;
+  opacity:.85!important;pointer-events:none!important;}
+.ggm .ggm-why-grid{display:grid!important;grid-template-columns:1.1fr .9fr!important;gap:60px!important;
+  align-items:center!important;position:relative!important;}
+@media(max-width:820px){.ggm .ggm-why-grid{grid-template-columns:1fr!important;gap:44px!important;}}
+.ggm .ggm-why h2{margin:0 0 22px!important;max-width:560px!important;}
+.ggm .ggm-why p{font-size:1.1rem!important;max-width:620px!important;color:var(--mid)!important;position:relative!important;}
+.ggm .ggm-why p+p{margin-top:18px!important;}
+.ggm .ggm-why p strong{color:var(--navy)!important;font-weight:600!important;}
+.ggm .ggm-why em{font-style:normal!important;color:var(--orange)!important;font-weight:600!important;}
+
+/* rotated print (basecamp-style photo frame) */
+.ggm .ggm-print{background:#fff!important;padding:12px 12px 46px!important;border:1px solid var(--rule)!important;
+  box-shadow:0 14px 30px -18px rgba(45,48,71,.4)!important;transform:rotate(1.6deg)!important;
+  position:relative!important;max-width:430px!important;margin:0 0 0 auto!important;}
+@media(max-width:820px){.ggm .ggm-print{margin:0 auto!important;transform:rotate(1.2deg)!important;}}
+.ggm .ggm-print img{width:100%!important;display:block!important;filter:saturate(.95) contrast(1.02)!important;}
+.ggm .ggm-print .ggm-cap{position:absolute!important;bottom:14px!important;left:16px!important;}
+
+/* what we see — the case for the month */
+.ggm .ggm-see{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.ggm .ggm-see h2{margin-bottom:14px!important;}
+.ggm .ggm-see-lede{font-size:1.1rem!important;color:var(--mid)!important;max-width:640px!important;margin-bottom:36px!important;}
+.ggm .ggm-see-row{display:flex!important;gap:18px!important;align-items:flex-start!important;
+  padding:20px 0!important;border-bottom:1px solid var(--rule)!important;max-width:760px!important;}
+.ggm .ggm-see-row:first-of-type{border-top:2px solid var(--navy)!important;}
+.ggm .ggm-see-row .ggm-blaze{flex:0 0 15px!important;margin-top:5px!important;}
+.ggm .ggm-see-row p{font-size:1.1rem!important;color:var(--mid)!important;}
+.ggm .ggm-see-row p strong{color:var(--navy)!important;font-weight:600!important;}
+
+/* team truth */
+.ggm .ggm-team{background:var(--navy)!important;}
+.ggm .ggm-team h2{color:#fff!important;max-width:620px!important;margin-bottom:20px!important;}
+.ggm .ggm-team h2 em{font-style:normal!important;color:var(--orange)!important;}
+.ggm .ggm-team p{font-size:1.1rem!important;color:rgba(255,255,255,.75)!important;max-width:600px!important;}
+
+/* play */
+.ggm .ggm-play{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;text-align:center!important;padding:110px 0!important;}
+.ggm .ggm-play h2{font-size:clamp(1.7rem,3.4vw,2.6rem)!important;max-width:18ch!important;margin:0 auto 18px!important;}
+.ggm .ggm-play h2 em{font-style:normal!important;color:var(--orange)!important;}
+.ggm .ggm-play p{font-size:1.1rem!important;color:var(--mid)!important;max-width:520px!important;margin:0 auto!important;}
+@media(max-width:768px){.ggm .ggm-play{padding:72px 0!important;}}
+
+/* gallery — native scroll-snap carousel, no libraries */
+.ggm .ggm-gal{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;
+  padding:84px 0!important;overflow:hidden!important;}
+@media(max-width:768px){.ggm .ggm-gal{padding:56px 0!important;}}
+.ggm .ggm-gal-head{max-width:1100px!important;margin:0 auto 30px!important;padding:0 40px!important;
+  display:flex!important;justify-content:space-between!important;align-items:flex-end!important;gap:20px!important;flex-wrap:wrap!important;}
+@media(max-width:768px){.ggm .ggm-gal-head{padding:0 24px!important;}}
+.ggm .ggm-gal-head h2{margin:0!important;}
+.ggm .ggm-gal-nav{display:flex!important;gap:8px!important;}
+.ggm .ggm-gal-nav button{width:44px!important;height:44px!important;border:1px solid var(--navy)!important;
+  background:transparent!important;color:var(--navy)!important;border-radius:3px!important;
+  font-size:1.1rem!important;line-height:1!important;cursor:pointer!important;transition:background .2s,color .2s!important;}
+.ggm .ggm-gal-nav button:hover{background:var(--navy)!important;color:#fff!important;}
+.ggm .ggm-track{display:flex!important;gap:18px!important;overflow-x:auto!important;
+  scroll-snap-type:x mandatory!important;padding:6px 40px 20px!important;
+  -webkit-overflow-scrolling:touch!important;scrollbar-width:none!important;}
+.ggm .ggm-track::-webkit-scrollbar{display:none!important;}
+@media(max-width:768px){.ggm .ggm-track{padding:6px 24px 20px!important;}}
+.ggm .ggm-shot{flex:0 0 auto!important;scroll-snap-align:start!important;margin:0!important;position:relative!important;}
+.ggm .ggm-shot img{height:min(52vh,440px)!important;width:auto!important;display:block!important;
+  border-radius:3px!important;filter:saturate(.95) contrast(1.02)!important;}
+@media(max-width:768px){.ggm .ggm-shot img{height:42vh!important;}}
+.ggm .ggm-shot .ggm-cap{display:block!important;margin-top:10px!important;}
+
+/* details */
+.ggm .ggm-details{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;padding:56px 0!important;}
+.ggm .ggm-details-row{display:flex!important;gap:20px!important;align-items:baseline!important;
+  padding:16px 0!important;border-bottom:1px solid var(--rule)!important;}
+.ggm .ggm-details-row:first-of-type{border-top:2px solid var(--navy)!important;}
+.ggm .ggm-details-label{width:110px!important;flex-shrink:0!important;}
+.ggm .ggm-details-value{font-size:1.05rem!important;color:var(--navy)!important;font-weight:500!important;}
+.ggm .ggm-details-value span{color:var(--light)!important;font-weight:400!important;}
+
+/* close */
+.ggm .ggm-close{background:var(--navy)!important;text-align:center!important;}
+.ggm .ggm-close h2{color:#fff!important;margin:0 auto 14px!important;max-width:560px!important;}
+.ggm .ggm-close h2 em{font-style:normal!important;color:var(--orange)!important;}
+.ggm .ggm-close p{font-size:1.05rem!important;color:rgba(255,255,255,.6)!important;max-width:460px!important;margin:0 auto 32px!important;}
+.ggm .ggm-close .ggm-mono{display:block!important;margin-top:26px!important;color:rgba(255,255,255,.4)!important;}
+</style>
+
+<div class="ggm">
+
+  <div class="ggm-stripe"></div>
+
+  
+  <section class="ggm-hero">
+    
+    <div class="ggm-wrap">
+      <img decoding="async" class="ggm-hero-logo" src="{{ site.baseurl }}/wp-content/uploads/2026/08/GG26-white-web2.png" alt="Grouse Games">
+      <span class="ggm-plate">Once a year</span>
+      <h1>The Grouse <em>Games.</em></h1>
+      <p class="ggm-hero-sub">Our annual in-house games. Teams get built by hand, then a month of build-up leads to a final day that&#8217;s as much game as workout, with prizes from local businesses.</p>
+      <span class="ggm-mono">Hawthorn East &middot; Members &middot; Every level</span>
+    </div>
+  </section>
+
+  <div class="ggm-stripe"></div>
+
+  
+  <section class="ggm-why">
+    <img decoding="async" class="ggm-topo" src="{{ site.baseurl }}/wp-content/uploads/2026/07/topo-1-light.png" alt="">
+    <div class="ggm-wrap">
+      <div class="ggm-why-grid">
+        <div>
+          <span class="ggm-plate">Train for something</span>
+          <h2>A date changes the training.</h2>
+          <p>Most of our members train to stay in shape and stay healthy. Good reasons. They don&#8217;t need a finish line. But training feels different when there&#8217;s a date coming. You push a bit harder.</p>
+          <p><strong>The Games gives everyone the same date, and a month of training that builds to it.</strong> If you haven&#8217;t picked your <em>out there</em> yet, start with the nearest one.</p>
+        </div>
+        <figure class="ggm-print">
+          <img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/EA-Games-2023-44-scaled.jpg" alt="The Grouse Games">
+          <span class="ggm-mono ggm-cap">The Grouse Games &middot; final day</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="ggm-see">
+    <div class="ggm-wrap">
+      <span class="ggm-plate">Why we run it</span>
+      <h2>What we see every year.</h2>
+      <p class="ggm-see-lede">We run the Games for what happens in the month before it. Every year it&#8217;s the same:</p>
+      <div class="ggm-see-row"><span class="ggm-blaze"></span><p><strong>Attendance jumps.</strong> Sessions book out for the month.</p></div>
+      <div class="ggm-see-row"><span class="ggm-blaze"></span><p><strong>There&#8217;s more talk.</strong> Team chats run hot, and people who&#8217;d never trained together start talking between sets.</p></div>
+      <div class="ggm-see-row"><span class="ggm-blaze"></span><p><strong>Members get a target.</strong> People who normally train to stay in shape are suddenly training <em>for</em> something.</p></div>
+      <div class="ggm-see-row"><span class="ggm-blaze"></span><p><strong>Game-day jitters.</strong> You don&#8217;t feel those much as an adult. Our members do, once a year.</p></div>
+    </div>
+  </section>
+
+  
+  <section class="ggm-team">
+    <div class="ggm-wrap">
+      <span class="ggm-plate" style="background:var(--orange)!important;color:#fff!important;">The team part</span>
+      <h2>You&#8217;ve got more time <em>than you think.</em></h2>
+      <p>Training is usually the first thing to drop out of a busy week. In a team it sticks. Someone&#8217;s expecting you, so you show up. It&#8217;s a lot easier to commit when other people are in it with you.</p>
+    </div>
+  </section>
+
+  
+  <section class="ggm-play">
+    <div class="ggm-wrap">
+      <h2>Adults don&#8217;t get many chances to <em>play.</em></h2>
+      <p>The Games is one. You&#8217;ll work as hard as any session all year, and you&#8217;ll be laughing while you do it.</p>
+    </div>
+  </section>
+
+  
+  <section class="ggm-gal">
+    <div class="ggm-gal-head">
+      <div>
+        <span class="ggm-plate">The last Games</span>
+        <h2>How it looks.</h2>
+      </div>
+      <div class="ggm-gal-nav">
+        <button type="button" data-gal="prev" aria-label="Previous photos">&larr;</button>
+        <button type="button" data-gal="next" aria-label="Next photos">&rarr;</button>
+      </div>
+    </div>
+    <div class="ggm-track" id="ggm-track">
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO03248_SS50_A3.5_FL28_ISO2500-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO06472_SS50_A5.6_FL16_ISO3200-1-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO03993_SS50_A6.3_FL19_ISO1000-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO03996_SS50_A6.3_FL16_ISO1000-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO04034_SS50_A5_FL16_ISO1250-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO04444_SS50_A2.8_FL16_ISO1250-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO04468_SS100_A4.5_FL16_ISO100-scaled.jpg" alt="Grouse Games"></figure>
+      <figure class="ggm-shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/08/NO04487_SS160_A5.6_FL18_ISO320-scaled.jpg" alt="Grouse Games"></figure>
+        </div>
+  </section>
+
+  
+  <section class="ggm-details">
+    <div class="ggm-wrap">
+      <div class="ggm-details-row"><span class="ggm-mono ggm-details-label">When</span><span class="ggm-details-value">Announced to members each May</span></div>
+      <div class="ggm-details-row"><span class="ggm-mono ggm-details-label">Format</span><span class="ggm-details-value">A month of build-up, then games day</span></div>
+      <div class="ggm-details-row"><span class="ggm-mono ggm-details-label">Who</span><span class="ggm-details-value">Members, every level</span></div>
+      <div class="ggm-details-row"><span class="ggm-mono ggm-details-label">Teams</span><span class="ggm-details-value">Put together by hand from whoever signs up</span></div>
+      <div class="ggm-details-row"><span class="ggm-mono ggm-details-label">Prizes</span><span class="ggm-details-value">Local, and worth showing up for</span></div>
+    </div>
+  </section>
+
+  
+  <section class="ggm-close">
+    <div class="ggm-wrap">
+      <h2>Circle <em>the date.</em></h2>
+      <p>We announce the Games to members each May. Everyone&#8217;s welcome. Teams get sorted from whoever&#8217;s in.</p>
+      <span class="ggm-mono">Grouse &middot; the gym for out there &middot; 37.8220&deg;S &middot; 145.0472&deg;E</span>
+    </div>
+  </section>
+
+  <script>
+  (function () {
+    var track = document.getElementById('ggm-track');
+    if (!track) return;
+    document.querySelectorAll('.ggm [data-gal]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var dir = btn.getAttribute('data-gal') === 'next' ? 1 : -1;
+        track.scrollBy({ left: dir * Math.round(track.clientWidth * 0.7), behavior: 'smooth' });
+      });
+    });
+  })();
+  </script>
+
+</div>

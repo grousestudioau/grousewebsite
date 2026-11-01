@@ -1,0 +1,224 @@
+---
+layout: "page"
+title: "Grouse Goodies"
+permalink: "/goodies/"
+body_class: "wp-singular page-template-default page page-id-2448 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+sitemap: false
+seo_head: |
+  <title>Grouse Goodies</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.ggo{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.ggo *,.ggo *::before,.ggo *::after{box-sizing:border-box;}
+.ggo h1,.ggo h2{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.ggo h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.ggo p{margin:0!important;}
+.ggo .ggo-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.ggo .ggo-wrap{padding:0 24px!important;}}
+
+.ggo .ggo-plate{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+
+/* hero */
+.ggo .ggo-hero{background:var(--navy)!important;padding:116px 0 72px!important;}
+.ggo .ggo-hero h1{color:#fff!important;margin-bottom:14px!important;}
+.ggo .ggo-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.ggo .ggo-hero-sub{font-size:1.1rem!important;line-height:1.65!important;
+  color:rgba(255,255,255,.7)!important;max-width:560px!important;}
+@media(max-width:768px){.ggo .ggo-hero{padding:104px 0 56px!important;}}
+
+/* referral banner */
+.ggo .ggo-referral{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;padding:56px 0!important;}
+.ggo .ggo-referral-card{background:var(--navy)!important;border-radius:4px!important;padding:36px 32px!important;
+  display:grid!important;grid-template-columns:auto 1fr!important;gap:28px!important;align-items:center!important;}
+@media(max-width:768px){.ggo .ggo-referral-card{grid-template-columns:1fr!important;gap:16px!important;}}
+.ggo .ggo-referral-amount{font-family:"geom-graphic",sans-serif!important;font-size:1.6rem!important;
+  font-weight:700!important;text-transform:uppercase!important;line-height:1.15!important;color:var(--orange)!important;max-width:230px!important;}
+.ggo .ggo-referral-desc{font-size:1rem!important;line-height:1.7!important;color:rgba(255,255,255,.75)!important;margin-bottom:8px!important;}
+.ggo .ggo-referral-desc strong{color:#fff!important;font-weight:600!important;}
+.ggo .ggo-referral-note{font-size:.88rem!important;color:rgba(255,255,255,.45)!important;margin-bottom:14px!important;}
+.ggo .ggo-referral-link{display:inline-block!important;color:var(--orange)!important;font-weight:600!important;text-decoration:none!important;}
+
+/* grid */
+.ggo .ggo-grid-section{background:var(--bg)!important;padding:84px 0!important;}
+@media(max-width:768px){.ggo .ggo-grid-section{padding:56px 0!important;}}
+.ggo .ggo-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;
+  gap:16px!important;align-items:stretch!important;row-gap:24px!important;}
+@media(max-width:900px){.ggo .ggo-grid{grid-template-columns:repeat(2,1fr)!important;}}
+@media(max-width:560px){.ggo .ggo-grid{grid-template-columns:1fr!important;}}
+
+/* partner card */
+.ggo .ggo-card{background:#fff!important;border:1px solid var(--rule)!important;
+  border-radius:4px!important;padding:30px 28px!important;height:100%!important;
+  display:flex!important;flex-direction:column!important;position:relative!important;}
+.ggo .ggo-card::before{content:''!important;position:absolute!important;top:-9px!important;left:26px!important;
+  width:15px!important;height:24px!important;border-radius:3px 4px 3px 5px!important;
+  background:var(--orange)!important;transform:rotate(-4deg)!important;}
+.ggo .ggo-card-name{display:block!important;font-family:"geom-graphic",sans-serif!important;text-transform:uppercase!important;
+  font-size:1rem!important;font-weight:700!important;letter-spacing:.02em!important;color:var(--navy)!important;margin-bottom:14px!important;}
+.ggo .ggo-discount{display:flex!important;align-items:baseline!important;gap:8px!important;
+  flex-wrap:wrap!important;margin-bottom:10px!important;}
+.ggo .ggo-discount-amount{font-family:"geom-graphic",sans-serif!important;text-transform:uppercase!important;
+  font-size:1.25rem!important;font-weight:700!important;color:var(--orange)!important;line-height:1!important;}
+.ggo .ggo-discount-label{font-size:.85rem!important;color:var(--mid)!important;}
+.ggo .ggo-code{display:inline-block!important;font-family:'Space Mono',monospace!important;font-size:.78rem!important;
+  letter-spacing:.04em!important;color:var(--navy)!important;
+  background:var(--bg-warm)!important;border:1px dashed rgba(45,48,71,.3)!important;
+  border-radius:3px!important;padding:5px 10px!important;margin-bottom:14px!important;align-self:flex-start!important;}
+.ggo .ggo-card-desc{font-size:.95rem!important;line-height:1.65!important;color:var(--mid)!important;
+  margin-bottom:20px!important;flex:1!important;}
+.ggo .ggo-card-desc em{color:var(--light)!important;}
+.ggo .ggo-card-desc strong{color:var(--navy)!important;font-weight:600!important;}
+.ggo .ggo-card-link{display:inline-block!important;color:var(--orange)!important;font-weight:600!important;
+  font-size:.95rem!important;text-decoration:none!important;}
+.ggo .ggo-card-link:hover{text-decoration:underline!important;}
+.ggo .ggo-cat{font-size:clamp(1.3rem,2.2vw,1.7rem)!important;margin:56px 0 22px!important;}
+.ggo .ggo-cat:first-of-type{margin-top:0!important;}
+</style>
+
+<div class="ggo">
+
+  
+  <section class="ggo-hero">
+    <div class="ggo-wrap">
+      <span class="ggo-plate">Members Only</span>
+      <h1>Grouse <em>Goodies.</em></h1>
+      <p class="ggo-hero-sub">Your member perks, all in one place.</p>
+    </div>
+  </section>
+
+  
+  <section class="ggo-referral">
+    <div class="ggo-wrap">
+      <div class="ggo-referral-card">
+        <div class="ggo-referral-amount">Bring your person, get a week on us</div>
+        <div>
+          <p class="ggo-referral-desc">Know someone who&#8217;d fit here? When they join, <strong>we credit a week of your membership to your account</strong>. Works on any membership, and there&#8217;s no cap on how many people you bring in.</p>
+          <p class="ggo-referral-note">Just make sure they mention your name when they come in.</p>
+          <a href="mailto:hello@grousestudio.au?subject=Member%20Referral" class="ggo-referral-link">Let us know &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="ggo-grid-section">
+    <div class="ggo-wrap">
+      <h2 class="ggo-cat">Services</h2>
+      <div class="ggo-grid">
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Alive Physio &amp; Wellness</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">10% off</span>
+            <span class="ggo-discount-label">all appointments</span>
+          </div>
+          <span class="ggo-code">Mention GROUSE when booking</span>
+          <p class="ggo-card-desc">Fascial Counterstrain with Nad, a gentle therapy for pain and movement. Worth it if you&rsquo;ve tried everything else.</p>
+          <a href="https://www.alivephysioandwellness.com.au/" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">Book Online &rarr;</a>
+        </div>
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Sportspinal Health</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">25% off</span>
+            <span class="ggo-discount-label">initial appointment</span>
+          </div>
+          <span class="ggo-code">Mention GROUSE when booking</span>
+          <p class="ggo-card-desc">Got a stubborn ache? Sportspinal covers physio, osteopathy, myotherapy, podiatry, remedial massage, clinical pilates, and dietetics. <strong>10% off all follow-ups</strong> too.</p>
+          <a href="https://sportspinalhealth.com.au/" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">Book Online &rarr;</a>
+        </div>
+
+      </div>
+
+      <h2 class="ggo-cat">Gear</h2>
+      <div class="ggo-grid">
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Sole Mechanics</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">15% off</span>
+            <span class="ggo-discount-label">online or in-store</span>
+          </div>
+          <span class="ggo-code">GROUSESTUDIO15</span>
+          <p class="ggo-card-desc">Ever noticed our trainers rocking barefoot shoes? Now you can try them too. Use the code online or mention it in-store.</p>
+          <a href="https://www.solemechanics.com.au/" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">View the range &rarr;</a>
+        </div>
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">LSKD</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">15% off</span>
+            <span class="ggo-discount-label">online store</span>
+          </div>
+          <span class="ggo-code">GROUSE15-FPCREW</span>
+          <p class="ggo-card-desc">Training gear that holds up. Use the code at checkout or shop via the link.</p>
+          <a href="https://www.lskd.co/?ref=qiyxpmsy&#038;utm_campaign=15192083&#038;utm_medium=influencer&#038;utm_source=collaborations&#038;utm_term=GROUSE15-FPCREW" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">Shop LSKD &rarr;</a>
+        </div>
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">bprimal</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">5% off</span>
+            <span class="ggo-discount-label">select collections</span>
+          </div>
+          <span class="ggo-code">Auto-applied, no code needed</span>
+          <p class="ggo-card-desc">Barefoot shoes built for natural movement. Shop through our link and 5% comes off selected collections automatically at checkout.</p>
+          <a href="https://www.bprimal.com.au/Grouse-Studio" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">Shop bprimal &rarr;</a>
+        </div>
+
+      </div>
+
+      <h2 class="ggo-cat">Food</h2>
+      <div class="ggo-grid">
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Rendina&rsquo;s Butchery</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">10% off</span>
+            <span class="ggo-discount-label">in store only</span>
+          </div>
+          <span class="ggo-code">Mention GROUSE in-store</span>
+          <p class="ggo-card-desc">Just 3.5km from the gym. The only certified biodynamic butcher in Melbourne. Good quality meat is a big part of health and longevity.</p>
+          <a href="https://rendinasbutchery.com.au/collections" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">View their range &rarr;</a>
+        </div>
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Camberwell Wholefoods</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">5% off</span>
+            <span class="ggo-discount-label">in store</span>
+          </div>
+          <span class="ggo-code">Mention GROUSE at the counter</span>
+          <p class="ggo-card-desc">A family-run gem just around the corner. They know where the food is grown and how it&rsquo;s made. Two of the kindest humans you&rsquo;ll meet.</p>
+          <a href="https://camberwellshopping.com.au/trader/camberwell-wholefoods/" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">Visit their website &rarr;</a>
+        </div>
+
+        <div class="ggo-card">
+          <span class="ggo-card-name">Siora Tiramisu</span>
+          <div class="ggo-discount">
+            <span class="ggo-discount-amount">10% off</span>
+            <span class="ggo-discount-label">3 or 5 packs</span>
+          </div>
+          <span class="ggo-code">Mention GROUSE when ordering</span>
+          <p class="ggo-card-desc">Sometimes you just want tiramisu. <em>They do make a protein version, if that helps.</em></p>
+          <a href="https://www.sioratiramisu.com.au/" target="_blank" rel="noopener noreferrer nofollow" class="ggo-card-link">View their range &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>

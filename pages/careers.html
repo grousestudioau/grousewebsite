@@ -1,0 +1,219 @@
+---
+layout: "page"
+title: "Careers"
+permalink: "/careers/"
+body_class: "wp-singular page-template-default page page-id-3279 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+seo_head: |
+  <title>Careers | Grouse Studio</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.gcr{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;--navy-deep:#232639;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gcr *,.gcr *::before,.gcr *::after{box-sizing:border-box;}
+.gcr h1,.gcr h2,.gcr h3{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gcr h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gcr h2{font-size:clamp(1.5rem,2.7vw,2.1rem)!important;}
+.gcr h3{font-size:1.1rem!important;}
+.gcr p{margin:0!important;}
+.gcr .gcr-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+.gcr .gcr-wrap-narrow{max-width:760px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.gcr .gcr-wrap,.gcr .gcr-wrap-narrow{padding:0 24px!important;}}
+.gcr section{padding:84px 0!important;}
+@media(max-width:768px){.gcr section{padding:56px 0!important;}}
+
+.gcr .gcr-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.gcr .gcr-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.gcr .gcr-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+
+/* hero */
+.gcr .gcr-hero{position:relative!important;background:var(--navy)!important;padding:116px 0 72px!important;overflow:hidden!important;}
+.gcr .gcr-hero-bg{position:absolute!important;inset:0!important;
+  background-image:url('{{ site.baseurl }}/wp-content/uploads/2026/07/guides-01-bush-trail.jpg')!important;
+  background-size:cover!important;background-position:center 45%!important;opacity:.14!important;}
+.gcr .gcr-hero .gcr-wrap{position:relative!important;}
+.gcr .gcr-hero .gcr-plate{background:var(--orange)!important;color:#fff!important;}
+.gcr .gcr-hero h1{color:#fff!important;margin-bottom:14px!important;max-width:720px!important;}
+.gcr .gcr-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gcr .gcr-hero-sub{font-size:1.1rem!important;line-height:1.6!important;
+  color:rgba(255,255,255,.72)!important;max-width:560px!important;margin-bottom:30px!important;}
+.gcr .gcr-hero-meta{display:flex!important;gap:24px!important;flex-wrap:wrap!important;margin-top:26px!important;}
+.gcr .gcr-hero-meta span{font-family:'Space Mono',monospace!important;font-size:.78rem!important;
+  letter-spacing:.05em!important;text-transform:uppercase!important;
+  color:rgba(255,255,255,.55)!important;display:flex!important;align-items:center!important;gap:8px!important;}
+.gcr .gcr-hero-meta span::before{content:''!important;width:9px!important;height:9px!important;
+  border-radius:50%!important;border:2px solid var(--orange)!important;flex-shrink:0!important;}
+@media(max-width:768px){.gcr .gcr-hero{padding:104px 0 60px!important;}
+  .gcr .gcr-hero .gcr-btn{width:100%!important;text-align:center!important;}}
+
+/* intro */
+.gcr .gcr-intro{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gcr .gcr-intro h2{margin-bottom:16px!important;max-width:720px!important;}
+.gcr .gcr-intro p{font-size:1.1rem!important;color:var(--mid)!important;max-width:620px!important;}
+.gcr .gcr-intro p strong{color:var(--navy)!important;font-weight:600!important;}
+
+/* roles */
+.gcr .gcr-roles{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.gcr .gcr-roles h2{margin-bottom:8px!important;}
+.gcr .gcr-roles-sub{font-size:1rem!important;color:var(--mid)!important;margin-bottom:36px!important;max-width:560px!important;}
+.gcr .gcr-role-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important;}
+@media(max-width:860px){.gcr .gcr-role-grid{grid-template-columns:1fr!important;}}
+.gcr .gcr-role{background:#fff!important;border:1px solid var(--rule)!important;border-radius:4px!important;
+  padding:34px 30px!important;position:relative!important;display:flex!important;flex-direction:column!important;}
+.gcr .gcr-role::before{content:''!important;position:absolute!important;top:-9px!important;left:26px!important;
+  width:15px!important;height:24px!important;border-radius:3px 4px 3px 5px!important;
+  background:var(--orange)!important;transform:rotate(-4deg)!important;}
+.gcr .gcr-role-tier{display:block!important;font-family:"geom-graphic",sans-serif!important;font-size:.8rem!important;
+  font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;
+  color:var(--orange)!important;margin-bottom:12px!important;}
+.gcr .gcr-role h3{font-size:1.2rem!important;margin-bottom:8px!important;}
+.gcr .gcr-role-when{font-family:'Space Mono',monospace!important;font-size:.72rem!important;letter-spacing:.05em!important;
+  text-transform:uppercase!important;color:var(--light)!important;margin-bottom:14px!important;line-height:1.7!important;}
+.gcr .gcr-role p{font-size:1rem!important;color:var(--mid)!important;flex:1!important;}
+.gcr .gcr-role p strong{color:var(--navy)!important;font-weight:600!important;}
+.gcr .gcr-role-pay{margin-top:20px!important;padding-top:18px!important;border-top:1px solid var(--rule)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:700!important;font-size:1.5rem!important;color:var(--navy)!important;}
+.gcr .gcr-role-pay small{font-family:'Space Mono',monospace!important;font-weight:400!important;font-size:.72rem!important;
+  letter-spacing:.04em!important;text-transform:uppercase!important;color:var(--mid)!important;display:block!important;margin-top:4px!important;}
+
+/* two lists */
+.gcr .gcr-lists{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gcr .gcr-lists-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;}
+@media(max-width:768px){.gcr .gcr-lists-grid{grid-template-columns:1fr!important;}}
+.gcr .gcr-list{background:#fff!important;border:1px solid var(--rule)!important;border-radius:4px!important;padding:34px 32px!important;}
+.gcr .gcr-list h3{margin-bottom:20px!important;font-size:1.1rem!important;}
+.gcr .gcr-list ul{list-style:none!important;margin:0!important;padding:0!important;}
+.gcr .gcr-list li{font-size:1rem!important;color:var(--mid)!important;padding:14px 0 14px 24px!important;position:relative!important;
+  border-bottom:1px solid var(--rule)!important;line-height:1.55!important;}
+.gcr .gcr-list li:last-child{border-bottom:none!important;padding-bottom:0!important;}
+.gcr .gcr-list li::before{content:''!important;position:absolute!important;left:0!important;top:21px!important;
+  width:9px!important;height:9px!important;border-radius:50%!important;border:2.5px solid var(--orange)!important;}
+
+/* close */
+.gcr .gcr-close{background:var(--navy-deep)!important;text-align:center!important;}
+.gcr .gcr-close .gcr-plate{background:var(--orange)!important;color:#fff!important;}
+.gcr .gcr-close h2{color:#fff!important;max-width:560px!important;margin:0 auto 12px!important;}
+.gcr .gcr-close h2 em{font-style:normal!important;color:var(--orange)!important;}
+.gcr .gcr-close p{font-size:1.05rem!important;color:rgba(255,255,255,.6)!important;max-width:440px!important;margin:0 auto 32px!important;}
+.gcr .gcr-close-note{margin-top:26px!important;font-family:'Space Mono',monospace!important;font-size:.76rem!important;
+  letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--light)!important;}
+.gcr .gcr-close-note a{color:var(--orange)!important;text-decoration:none!important;}
+@media(max-width:768px){.gcr .gcr-close .gcr-btn{width:100%!important;max-width:400px!important;}}
+</style>
+
+<div class="gcr">
+
+  
+  <section class="gcr-hero">
+    <div class="gcr-hero-bg"></div>
+    <div class="gcr-wrap">
+      <span class="gcr-plate">Careers</span>
+      <h1>Coach at Grouse <em>and SISU.</em></h1>
+      <p class="gcr-hero-sub">SISU Training Academy and Grouse Studio share a gym in Hawthorn East. We&#8217;re hiring a coach to work across both, starting with SISU&#8217;s youth sessions.</p>
+      <a href="https://calendar.app.google/1q3YyzZSbLxL9KoSA" target="_blank" rel="noopener noreferrer nofollow" class="gcr-btn">Book a chat</a>
+      <div class="gcr-hero-meta">
+        <span>Hawthorn East</span>
+        <span>One venue, three ways to earn</span>
+        <span>Small groups</span>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gcr-intro">
+    <div class="gcr-wrap">
+      <span class="gcr-plate">The open position</span>
+      <h2>Youth S&amp;C and Group Coach.</h2>
+      <p>We keep groups small on purpose. <strong>SISU sessions cap at 8 and Grouse classes cap at 12</strong>, so you&#8217;ll know everyone you&#8217;re coaching by name.</p>
+    </div>
+  </section>
+
+  
+  <section class="gcr-roles">
+    <div class="gcr-wrap">
+      <span class="gcr-plate">Three ways to earn</span>
+      <h2>How the role works.</h2>
+      <p class="gcr-roles-sub">One venue, no driving between sites. You can do one of these, or build up all three over time.</p>
+      <div class="gcr-role-grid">
+
+        <div class="gcr-role">
+          <span class="gcr-role-tier">SISU · Youth S&amp;C</span>
+          <h3>Youth strength &amp; conditioning</h3>
+          <div class="gcr-role-when">Mon to Thu, 4 to 5pm<br>Sun, 11am to 12pm</div>
+          <p>Mixed groups of boys and girls, up to 8 per session. You don&#8217;t need to know basketball or any one sport. You need to be able to read kids, including their moods and their confidence, and build sessions where they feel safe to push themselves and start to enjoy training.</p>
+          <div class="gcr-role-pay">$70<small>per hour</small></div>
+        </div>
+
+        <div class="gcr-role">
+          <span class="gcr-role-tier">Grouse · Adults</span>
+          <h3>Grouse group classes</h3>
+          <div class="gcr-role-when">Across the weekly timetable</div>
+          <p>Most of our members are 30 to 55. Lots of professionals and parents with busy lives. You don&#8217;t need to be an anatomy expert. You need to be good with people, pick up on how the class is going, and coach.</p>
+          <div class="gcr-role-pay">From $40<small>per hour + super, up with experience</small></div>
+        </div>
+
+        <div class="gcr-role">
+          <span class="gcr-role-tier">Your own clients</span>
+          <h3>Personal training</h3>
+          <div class="gcr-role-when">Outside class times</div>
+          <p>If you have your own clients, you can train them here outside class times. If you work with a specific group, like an age group or a particular specialty, we&#8217;ll list you on our website so those enquiries come to you.</p>
+          <div class="gcr-role-pay">$30<small>per session</small></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gcr-lists">
+    <div class="gcr-wrap">
+      <div class="gcr-lists-grid">
+        <div class="gcr-list">
+          <h3>What you get</h3>
+          <ul>
+            <li>Three ways to earn at one venue, with no driving between sites</li>
+            <li>Most of your weekend free</li>
+            <li>Time on the floor with experienced coaches while you build your programming and group coaching</li>
+            <li>Marketing behind your PT business</li>
+          </ul>
+        </div>
+        <div class="gcr-list">
+          <h3>You&#8217;ll need</h3>
+          <ul>
+            <li>A current Working with Children Check</li>
+            <li>Experience coaching kids in a sport setting</li>
+            <li>Cert III and IV in Fitness, or equivalent</li>
+            <li>Current first aid and CPR</li>
+            <li>Your own insurance if you&#8217;re running PT</li>
+            <li>To like working with people</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gcr-close">
+    <div class="gcr-wrap-narrow">
+      <span class="gcr-plate">Next step</span>
+      <h2>Skip the <em>CV.</em></h2>
+      <p>Book a time for a chat and we&#8217;ll go through how it could work for you.</p>
+      <a href="https://calendar.app.google/1q3YyzZSbLxL9KoSA" target="_blank" rel="noopener noreferrer nofollow" class="gcr-btn">Book a chat</a>
+      <p class="gcr-close-note">Or email <a href="mailto:hello@grousestudio.au">hello@grousestudio.au</a></p>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+{% if page.seo_head %}{{ page.seo_head }}{% else %}{% seo %}{% endif %}
+{% if site.preview %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://use.typekit.net/ccu5clg.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/grouse.css">
+{% include generated/favicons.html %}
+{% feed_meta %}
+<meta name="google-site-verification" content="xxQ5TeD2fKxLHJxhRBDxsvqDa8Ezr-CzfXrImm8v89A">
+{% unless site.preview %}{% include analytics.html %}{% endunless %}
+</head>
+<body class="{{ page.body_class | default: layout.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{% include generated/header.html %}
+<main id="main">
+{{ content }}
+</main>
+{% include generated/footer.html %}
+<script>
+(function(){
+  var t=document.querySelector('.site-header__toggle'),n=document.getElementById('site-nav');
+  if(t&&n){t.addEventListener('click',function(){var open=n.classList.toggle('is-open');document.body.classList.toggle('nav-open',open);t.setAttribute('aria-expanded',open?'true':'false')})}
+  var hdr=document.querySelector('.site-header');
+  if(hdr){var onScroll=function(){hdr.classList.toggle('is-scrolled',window.scrollY>10)};onScroll();window.addEventListener('scroll',onScroll,{passive:true})}
+})();
+</script>
+</body>
+</html>

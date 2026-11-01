@@ -1,0 +1,271 @@
+---
+layout: "page"
+title: "Sessions"
+permalink: "/sessions/"
+body_class: "wp-singular page-template-default page page-id-2414 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+redirect_from: ["/classes/"]
+seo_head: |
+  <title>Classes | Strength Training Classes at Grouse Studio</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.gsc{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gsc *,.gsc *::before,.gsc *::after{box-sizing:border-box;}
+.gsc .gsc-wrap{max-width:1100px;margin:0 auto;padding:0 40px;}
+@media(max-width:768px){.gsc .gsc-wrap{padding:0 24px;}}
+.gsc section{padding:84px 0;}
+@media(max-width:768px){.gsc section{padding:56px 0;}}
+.gsc h1,.gsc h2,.gsc h3{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gsc h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gsc h2{font-size:clamp(1.5rem,2.7vw,2.1rem)!important;}
+.gsc h3{font-size:1.15rem!important;}
+.gsc p{margin:0!important;}
+.gsc .gsc-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.gsc .gsc-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.gsc .gsc-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+.gsc .gsc-btn-outline{display:inline-block!important;background:transparent!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:14px 30px!important;
+  border-radius:3px!important;border:1px solid rgba(255,255,255,.45)!important;transition:.2s!important;}
+.gsc .gsc-btn-outline:hover{background:rgba(255,255,255,.1)!important;border-color:#fff!important;color:#fff!important;}
+.gsc .gsc-btn-ghost{display:inline-block!important;background:transparent!important;color:var(--navy)!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:14px 30px!important;
+  border-radius:3px!important;border:1px solid rgba(45,48,71,.4)!important;transition:.2s!important;}
+.gsc .gsc-btn-ghost:hover{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important;}
+
+/* hero */
+.gsc .gsc-hero{position:relative!important;background:var(--navy)!important;padding:120px 0 92px!important;overflow:hidden!important;}
+.gsc .gsc-hero-bg{position:absolute!important;inset:0!important;
+  background-image:url('{{ site.baseurl }}/wp-content/uploads/2025/11/NO3220_SS2000_A6.4_FL18_ISO3200-2048x1630.jpg')!important;
+  background-size:cover!important;background-position:center 35%!important;opacity:.24!important;}
+.gsc .gsc-hero .gsc-wrap{position:relative!important;}
+.gsc .gsc-hero .gsc-plate{background:var(--orange)!important;color:#fff!important;}
+.gsc .gsc-hero h1{color:#fff!important;max-width:760px!important;margin-bottom:22px!important;}
+.gsc .gsc-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gsc .gsc-hero-intro{font-size:1.15rem!important;line-height:1.65!important;
+  color:rgba(255,255,255,.78)!important;max-width:600px!important;margin-bottom:32px!important;}
+.gsc .gsc-actions{display:flex!important;gap:14px!important;flex-wrap:wrap!important;}
+@media(max-width:600px){.gsc .gsc-actions{flex-direction:column!important;align-items:stretch!important;}
+  .gsc .gsc-actions a{text-align:center!important;}}
+
+/* section heads */
+.gsc .gsc-head{max-width:640px!important;margin-bottom:44px!important;}
+.gsc .gsc-head h2{margin-bottom:12px!important;}
+.gsc .gsc-head p{font-size:1.05rem!important;color:var(--mid)!important;}
+
+/* session structure */
+.gsc .gsc-structure{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gsc .gsc-structure-grid{display:grid!important;grid-template-columns:1.15fr .85fr!important;gap:56px!important;align-items:start!important;}
+@media(max-width:860px){.gsc .gsc-structure-grid{grid-template-columns:1fr!important;gap:36px!important;}}
+.gsc .gsc-steps{display:grid!important;gap:12px!important;margin-top:8px!important;}
+.gsc .gsc-step{background:var(--navy)!important;border-radius:4px!important;padding:28px 30px!important;
+  display:grid!important;grid-template-columns:54px 1fr!important;gap:20px!important;align-items:start!important;}
+.gsc .gsc-step-num{font-family:'Space Mono',monospace!important;font-size:1rem!important;
+  font-weight:500!important;color:var(--orange)!important;line-height:1.4!important;}
+.gsc .gsc-step-title{font-family:"geom-graphic",sans-serif!important;font-size:1.05rem!important;text-transform:uppercase!important;
+  font-weight:700!important;letter-spacing:.02em!important;color:#fff!important;display:block!important;margin-bottom:6px!important;}
+.gsc .gsc-step-desc{font-size:.97rem!important;line-height:1.65!important;color:rgba(255,255,255,.72)!important;}
+.gsc .gsc-structure-note{font-size:1rem!important;color:var(--mid)!important;margin-top:24px!important;
+  padding-top:22px!important;border-top:1px solid var(--rule)!important;}
+.gsc .gsc-structure-img{border-radius:4px!important;overflow:hidden!important;aspect-ratio:4/5!important;position:relative!important;}
+.gsc .gsc-structure-img::after{content:''!important;position:absolute!important;inset:0!important;
+  box-shadow:inset 0 0 34px rgba(35,38,57,.28)!important;border-radius:4px!important;pointer-events:none!important;}
+.gsc .gsc-structure-img img{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important;}
+@media(max-width:860px){.gsc .gsc-structure-img{aspect-ratio:16/9!important;}}
+
+/* strength loop */
+.gsc .gsc-loop{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.gsc .gsc-qualities{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;}
+@media(max-width:768px){.gsc .gsc-qualities{grid-template-columns:1fr!important;}}
+.gsc .gsc-quality{background:#fff!important;border:1px solid var(--rule)!important;
+  border-radius:4px!important;padding:30px 28px!important;position:relative!important;}
+.gsc .gsc-quality::before{content:''!important;position:absolute!important;top:-9px!important;left:26px!important;
+  width:15px!important;height:24px!important;border-radius:3px 4px 3px 5px!important;
+  background:var(--orange)!important;transform:rotate(-4deg)!important;}
+.gsc .gsc-quality-day{display:block!important;font-family:'Space Mono',monospace!important;font-size:.74rem!important;
+  font-weight:500!important;letter-spacing:.1em!important;text-transform:uppercase!important;
+  color:var(--light)!important;margin-bottom:8px!important;}
+.gsc .gsc-quality h3{margin-bottom:10px!important;}
+.gsc .gsc-quality p{font-size:1rem!important;line-height:1.65!important;color:var(--mid)!important;}
+
+/* class types */
+.gsc .gsc-types{background:var(--navy)!important;}
+.gsc .gsc-types .gsc-plate{background:var(--orange)!important;color:#fff!important;}
+.gsc .gsc-types h2{color:#fff!important;}
+.gsc .gsc-types-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;}
+@media(max-width:768px){.gsc .gsc-types-grid{grid-template-columns:1fr!important;}}
+.gsc .gsc-type{position:relative!important;background:rgba(255,255,255,.05)!important;
+  border-radius:4px!important;padding:40px 36px!important;overflow:hidden!important;}
+.gsc .gsc-type-img{position:absolute!important;inset:0!important;background-size:cover!important;
+  background-position:center!important;opacity:.08!important;}
+.gsc .gsc-type>*{position:relative!important;z-index:1!important;}
+.gsc .gsc-type-label{display:block!important;font-family:'Space Mono',monospace!important;font-size:.72rem!important;
+  font-weight:500!important;letter-spacing:.12em!important;text-transform:uppercase!important;
+  color:var(--orange)!important;margin-bottom:12px!important;}
+.gsc .gsc-type h3{font-size:1.5rem!important;color:#fff!important;margin-bottom:14px!important;}
+.gsc .gsc-type-desc{font-size:1rem!important;line-height:1.7!important;color:rgba(255,255,255,.7)!important;margin-bottom:24px!important;}
+.gsc .gsc-movements-label{display:block!important;font-family:'Space Mono',monospace!important;font-size:.7rem!important;
+  font-weight:500!important;letter-spacing:.12em!important;text-transform:uppercase!important;
+  color:rgba(255,255,255,.4)!important;margin-bottom:10px!important;}
+.gsc .gsc-movements{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin-bottom:24px!important;}
+.gsc .gsc-movement{font-size:.85rem!important;font-weight:500!important;color:rgba(255,255,255,.78)!important;
+  background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.14)!important;
+  padding:5px 13px!important;border-radius:3px!important;}
+.gsc .gsc-type-when{font-size:.92rem!important;color:rgba(255,255,255,.5)!important;line-height:1.65!important;margin-bottom:24px!important;}
+.gsc .gsc-type-when strong{display:block!important;color:rgba(255,255,255,.7)!important;font-weight:500!important;
+  font-family:'Space Mono',monospace!important;font-size:.72rem!important;letter-spacing:.12em!important;
+  text-transform:uppercase!important;margin-bottom:4px!important;}
+
+/* close */
+.gsc .gsc-close{background:var(--bg)!important;border-top:1px solid var(--rule)!important;text-align:center!important;}
+.gsc .gsc-close h2{max-width:600px!important;margin:0 auto 12px!important;}
+.gsc .gsc-close p{font-size:1.05rem!important;color:var(--mid)!important;max-width:480px!important;margin:0 auto 32px!important;}
+.gsc .gsc-close .gsc-actions{justify-content:center!important;}
+</style>
+
+<div class="gsc">
+
+  
+  <section class="gsc-hero">
+    <div class="gsc-hero-bg"></div>
+    <div class="gsc-wrap">
+      <span class="gsc-plate">How we train</span>
+      <h1>Programmed year-round.<br><em>Built to last.</em></h1>
+      <p class="gsc-hero-intro">Every session at Grouse follows the same rhythm: four strength days and two hybrid days, on a program that builds on itself week after week. The things you&#8217;re training for take longer than twelve weeks.</p>
+      <div class="gsc-actions">
+        <a href="{{ site.baseurl }}/first-session/" class="gsc-btn">Book your first session · 50% off</a>
+        <a href="{{ site.baseurl }}/schedule/" class="gsc-btn-outline">View the schedule</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsc-structure">
+    <div class="gsc-wrap">
+      <div class="gsc-structure-grid">
+        <div>
+          <div class="gsc-head">
+            <span class="gsc-plate">Every session</span>
+            <h2>How each session runs.</h2>
+            <p>Same format every time. Once you know it, you can put everything into the work.</p>
+          </div>
+          <div class="gsc-steps">
+            <div class="gsc-step">
+              <span class="gsc-step-num">01</span>
+              <div><span class="gsc-step-title">Prep</span><p class="gsc-step-desc">Switch on what the day needs, specific to the session, so the main work starts well.</p></div>
+            </div>
+            <div class="gsc-step">
+              <span class="gsc-step-num">02</span>
+              <div><span class="gsc-step-title">Main work</span><p class="gsc-step-desc">Strength or hybrid focus depending on the day. Coached the whole way through, and everything scales to where you&#8217;re at.</p></div>
+            </div>
+            <div class="gsc-step">
+              <span class="gsc-step-num">03</span>
+              <div><span class="gsc-step-title">Finish</span><p class="gsc-step-desc">Every session ends with purpose, and you leave better than you walked in.</p></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="gsc-structure-img">
+            <img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO06489_SS100_A4.5_FL16_ISO5000-1024x683.jpg" alt="A session under way at Grouse Studio">
+          </div>
+          <p class="gsc-structure-note">Everything&#8217;s coached and scales to your level. You can walk in with no experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsc-loop">
+    <div class="gsc-wrap">
+      <div class="gsc-head">
+        <span class="gsc-plate">The program</span>
+        <h2>The Strength Loop.</h2>
+        <p>Four qualities, cycled year-round. Each has its own focus and builds on the last, so you keep progressing without starting over.</p>
+      </div>
+      <div class="gsc-qualities">
+        <div class="gsc-quality">
+          <span class="gsc-quality-day">Monday</span>
+          <h3>Strength: Load</h3>
+          <p>Compound lifts at challenging weights, with full focus on form.</p>
+        </div>
+        <div class="gsc-quality">
+          <span class="gsc-quality-day">Tuesday</span>
+          <h3>Strength: Power</h3>
+          <p>Explosive, lighter-weight work for speed and timing. The kind of power that&#8217;s easiest to neglect.</p>
+        </div>
+        <div class="gsc-quality">
+          <span class="gsc-quality-day">Wednesday</span>
+          <h3>Strength: Foundation</h3>
+          <p>The day that fixes the small things, so the heavy sessions feel better.</p>
+        </div>
+        <div class="gsc-quality">
+          <span class="gsc-quality-day">Thursday</span>
+          <h3>Strength: Volume</h3>
+          <p>Higher-rep, repeatable sets that build the base everything else sits on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsc-types">
+    <div class="gsc-wrap">
+      <div class="gsc-head">
+        <span class="gsc-plate">Session types</span>
+        <h2>Two types of session.</h2>
+      </div>
+      <div class="gsc-types-grid">
+        <div class="gsc-type">
+          <div class="gsc-type-img" style="background-image:url('{{ site.baseurl }}/wp-content/uploads/2025/11/NO2993_SS125_A2.8_FL18_ISO3200-2048x1365.jpg')"></div>
+          <span class="gsc-type-label">Monday &ndash; Thursday</span>
+          <h3>Strength</h3>
+          <p class="gsc-type-desc">Full-body strength built around the four Loop qualities. Each day has a clear focus, load, power, foundation, or volume, so you know exactly what you&#8217;re training and why. Coached throughout, and it scales to any level.</p>
+          <span class="gsc-movements-label">You&#8217;ll see</span>
+          <div class="gsc-movements">
+            <span class="gsc-movement">Squats</span><span class="gsc-movement">Hinges</span><span class="gsc-movement">Pressing</span><span class="gsc-movement">Pulling</span><span class="gsc-movement">Carries</span>
+          </div>
+          <p class="gsc-type-when"><strong>Times</strong>6:00am &bull; 7:00am &bull; 9:30am &bull; 5:30pm &bull; 6:30pm</p>
+          <a href="{{ site.baseurl }}/first-session/" class="gsc-btn">Start with a Strength session</a>
+        </div>
+        <div class="gsc-type">
+          <div class="gsc-type-img" style="background-image:url('{{ site.baseurl }}/wp-content/uploads/2025/11/NO3636_SS320_A2.8_FL18_ISO1600-2048x1365.jpg')"></div>
+          <span class="gsc-type-label">Friday &ndash; Saturday</span>
+          <h3>Hybrid</h3>
+          <p class="gsc-type-desc">Conditioning and strength, with some chaos thrown in. Machines, kettlebells, dumbbells, bodyweight and partner formats. Fast-paced and always coached. Different each week.</p>
+          <span class="gsc-movements-label">You&#8217;ll see</span>
+          <div class="gsc-movements">
+            <span class="gsc-movement">Circuits</span><span class="gsc-movement">Sleds</span><span class="gsc-movement">Kettlebells</span><span class="gsc-movement">Team work</span>
+          </div>
+          <p class="gsc-type-when"><strong>Times</strong>Fri: 6:00am &bull; 7:00am &bull; 9:30am &bull; 12:00pm<br>Sat: 7:00am &bull; 8:00am &bull; 9:00am</p>
+          <a href="{{ site.baseurl }}/first-session/" class="gsc-btn">Start with a Hybrid session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsc-close">
+    <div class="gsc-wrap">
+      <h2>Start with one.</h2>
+      <p>Your first session is half price. A Strength day or a Hybrid, either one will tell you plenty.</p>
+      <div class="gsc-actions">
+        <a href="{{ site.baseurl }}/first-session/" class="gsc-btn">Book your first session · 50% off</a>
+        <a href="{{ site.baseurl }}/schedule/" class="gsc-btn-ghost">View the schedule</a>
+      </div>
+    </div>
+  </section>
+
+</div>

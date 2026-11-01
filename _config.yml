@@ -1,0 +1,28 @@
+title: Grouse Studio
+description: Small-group strength training in Hawthorn East, Melbourne.
+url: https://grousestudio.au
+# PREVIEW MODE. To go live on the domain: set baseurl to "", set preview to false, add the CNAME file.
+baseurl: /grousewebsite
+preview: true
+# Form service address for the contact page, e.g. https://formspree.io/f/xxxxxxxx
+contact_form_endpoint: ""
+timezone: Australia/Melbourne
+lang: en_AU
+permalink: /:title/
+future: false
+logo: /wp-content/uploads/2026/08/Grouse_Icon_ColourLight-scaled.png
+social:
+  name: Grouse Studio
+  links:
+    - https://www.instagram.com/grousestudio/
+    - https://www.facebook.com/grousestudio
+    - https://www.linkedin.com/company/99022376
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+feed:
+  path: feed.xml
+exclude:
+  - README.md

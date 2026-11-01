@@ -1,0 +1,280 @@
+---
+layout: "page"
+title: "See The Gym"
+permalink: "/seethegym/"
+body_class: "wp-singular page-template-default page page-id-2346 wp-custom-logo wp-embed-responsive wp-theme-grouse"
+seo_head: |
+  <title>See The Gym | Inside Grouse Studio Melbourne</title>
+---
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&#038;family=Space+Mono:wght@400;700&#038;display=swap" rel="stylesheet">
+
+<style>
+.gsg{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#5B6B7F;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  --r-sm:3px;--r-md:4px;--r-lg:4px;
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gsg *,.gsg *::before,.gsg *::after{box-sizing:border-box;}
+.gsg h1,.gsg h2{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gsg h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gsg p{margin:0!important;}
+.gsg img{max-width:100%!important;height:auto!important;display:block!important;}
+.gsg .gsg-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.gsg .gsg-wrap{padding:0 24px!important;}}
+
+.gsg .gsg-eyebrow{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+
+/* hero */
+.gsg .gsg-hero{background:var(--navy)!important;padding:116px 0 64px!important;overflow:hidden!important;}
+.gsg .gsg-hero-inner{display:flex!important;align-items:center!important;gap:56px!important;}
+@media(max-width:768px){.gsg .gsg-hero{padding:104px 0 52px!important;}
+  .gsg .gsg-hero-inner{flex-direction:column!important;align-items:flex-start!important;gap:32px!important;}}
+.gsg .gsg-hero-text{flex:1!important;min-width:0!important;}
+.gsg .gsg-hero h1{color:#fff!important;margin-bottom:16px!important;}
+.gsg .gsg-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gsg .gsg-hero-sub{font-size:1.05rem!important;line-height:1.65!important;
+  color:rgba(255,255,255,.7)!important;max-width:460px!important;}
+.gsg .gsg-hero-video{flex-shrink:0!important;}
+.gsg .gsg-hero-video-inner{width:200px!important;aspect-ratio:9/16!important;
+  border-radius:var(--r-lg)!important;overflow:hidden!important;position:relative!important;
+  box-shadow:0 16px 44px rgba(0,0,0,.45)!important;}
+.gsg .gsg-hero-video-inner iframe{position:absolute!important;top:0!important;left:0!important;
+  width:100%!important;height:100%!important;border:0!important;}
+@media(max-width:768px){.gsg .gsg-hero-video-inner{width:170px!important;}}
+
+/* gallery sections */
+.gsg .gsg-section{padding:84px 0!important;border-bottom:1px solid var(--rule)!important;background:var(--bg)!important;}
+@media(max-width:768px){.gsg .gsg-section{padding:56px 0!important;}}
+.gsg .gsg-section-alt{background:var(--bg-warm)!important;}
+.gsg .gsg-section-header{display:flex!important;align-items:baseline!important;
+  justify-content:space-between!important;gap:20px!important;margin-bottom:28px!important;flex-wrap:wrap!important;}
+.gsg .gsg-section-title{font-size:clamp(1.6rem,2.8vw,2.2rem)!important;}
+.gsg .gsg-section-meta{font-family:'Space Mono',monospace!important;font-size:.74rem!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--light)!important;white-space:nowrap!important;}
+
+/* carousel */
+.gsg .gsg-carousel{position:relative!important;}
+.gsg .gsg-carousel-track-wrap{overflow:hidden!important;border-radius:var(--r-md)!important;}
+.gsg .gsg-carousel-track{display:flex!important;gap:4px!important;
+  transition:transform .45s cubic-bezier(.4,0,.2,1)!important;will-change:transform!important;}
+.gsg .gsg-carousel-slide{flex:0 0 calc(50% - 2px)!important;aspect-ratio:3/2!important;overflow:hidden!important;}
+.gsg .gsg-carousel-slide img{width:100%!important;height:100%!important;object-fit:cover!important;
+  transition:transform .4s ease!important;}
+.gsg .gsg-carousel-slide:hover img{transform:scale(1.03)!important;}
+@media(max-width:600px){.gsg .gsg-carousel-slide{flex:0 0 calc(100% - 2px)!important;}}
+.gsg .gsg-carousel-nav{display:flex!important;gap:8px!important;margin-top:16px!important;
+  align-items:center!important;justify-content:flex-end!important;}
+.gsg .gsg-carousel-btn{width:40px!important;height:40px!important;border-radius:50%!important;
+  border:1px solid var(--rule)!important;background:#fff!important;cursor:pointer!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  transition:background .2s,border-color .2s,color .2s!important;color:var(--navy)!important;
+  font-size:1rem!important;flex-shrink:0!important;line-height:1!important;}
+.gsg .gsg-carousel-btn:hover{background:var(--navy)!important;border-color:var(--navy)!important;color:#fff!important;}
+.gsg .gsg-carousel-btn:disabled{opacity:.3!important;cursor:not-allowed!important;}
+.gsg .gsg-carousel-counter{font-size:.85rem!important;color:var(--light)!important;
+  min-width:48px!important;text-align:center!important;}
+
+/* close */
+.gsg .gsg-close{background:var(--navy)!important;padding:84px 0!important;
+  text-align:center!important;position:relative!important;}
+.gsg .gsg-close::before{content:''!important;position:absolute!important;top:0!important;
+  left:50%!important;transform:translateX(-50%)!important;width:56px!important;height:3px!important;
+  background:var(--orange)!important;border-radius:0 0 3px 3px!important;}
+.gsg .gsg-close h2{font-size:clamp(1.6rem,2.8vw,2.2rem)!important;color:#fff!important;
+  max-width:520px!important;margin:0 auto 12px!important;}
+.gsg .gsg-close-sub{font-size:1.05rem!important;color:rgba(255,255,255,.55)!important;
+  max-width:380px!important;margin:0 auto 32px!important;}
+.gsg .gsg-close-btn{display:inline-block!important;background:var(--orange)!important;color:#fff!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;
+  padding:15px 32px!important;border-radius:var(--r-sm)!important;transition:background .2s!important;}
+.gsg .gsg-close-btn:hover{background:var(--orange-dk)!important;color:#fff!important;}
+@media(max-width:768px){.gsg .gsg-close{padding:56px 0!important;}
+  .gsg .gsg-close-btn{width:100%!important;max-width:400px!important;}}
+</style>
+
+<div class="gsg">
+
+  
+  <section class="gsg-hero">
+    <div class="gsg-wrap">
+      <div class="gsg-hero-inner">
+        <div class="gsg-hero-text">
+          <span class="gsg-eyebrow">See the Gym</span>
+          <h1>How it looks,<br><em>every day.</em></h1>
+          <p class="gsg-hero-sub">Shot during sessions and events at the studio.</p>
+        </div>
+        <div class="gsg-hero-video">
+          <div class="gsg-hero-video-inner">
+            <iframe src="https://player.vimeo.com/video/1064536316?autoplay=1&#038;muted=1&#038;loop=1&#038;background=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsg-section">
+    <div class="gsg-wrap">
+      <div class="gsg-section-header">
+        <h2 class="gsg-section-title">During a session.</h2>
+        <span class="gsg-section-meta">Mon &ndash; Sat &bull; Small groups &bull; Always coached</span>
+      </div>
+      <div class="gsg-carousel">
+        <div class="gsg-carousel-track-wrap">
+          <div class="gsg-carousel-track">
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3056_SS125_A2.8_FL18_ISO3200-scaled.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3671_SS320_A3.2_FL18_ISO-1600.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO2732_SS250_A3.6_FL18_ISO3200-1.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3636_SS320_A2.8_FL18_ISO1600-scaled.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3169_SS500_A9_FL18_ISO3200-scaled.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO2993_SS125_A2.8_FL18_ISO3200-scaled.jpg" alt="During a session" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2024/12/NO3220_SS2000_A6.4_FL18_ISO3200.jpg" alt="During a session" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gsg-carousel-nav">
+          <span class="gsg-carousel-counter"></span>
+          <button class="gsg-carousel-btn" data-dir="prev">&#8592;</button>
+          <button class="gsg-carousel-btn" data-dir="next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsg-section gsg-section-alt">
+    <div class="gsg-wrap">
+      <div class="gsg-section-header">
+        <h2 class="gsg-section-title">The studio.</h2>
+        <span class="gsg-section-meta">26 Victoria Road, Hawthorn East</span>
+      </div>
+      <div class="gsg-carousel">
+        <div class="gsg-carousel-track-wrap">
+          <div class="gsg-carousel-track">
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3417_SS250_A8_FL18_ISO200-scaled.jpg" alt="Front of Grouse Studio" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3281_SS250_A2.8_FL18_ISO2500-scaled.jpg" alt="Inside the studio" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO3285_SS250_A2.8_FL18_ISO2500-scaled.jpg" alt="Inside the studio" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gsg-carousel-nav">
+          <span class="gsg-carousel-counter"></span>
+          <button class="gsg-carousel-btn" data-dir="prev">&#8592;</button>
+          <button class="gsg-carousel-btn" data-dir="next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsg-section">
+    <div class="gsg-wrap">
+      <div class="gsg-section-header">
+        <h2 class="gsg-section-title">Grouse Games.</h2>
+        <span class="gsg-section-meta">Annual in-house competition</span>
+      </div>
+      <div class="gsg-carousel">
+        <div class="gsg-carousel-track-wrap">
+          <div class="gsg-carousel-track">
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO03433_SS60_A4_FL28_ISO2000-scaled.jpg" alt="Grouse Games" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO03490_SS60_A4_FL28_ISO2000-scaled.jpg" alt="Grouse Games" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO06222_SS50_A9_FL25_ISO5000-scaled.jpg" alt="Grouse Games 2025" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO06420_SS20_A8_FL25_ISO1600-scaled.jpg" alt="Grouse Games 2025" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/EA-Games-2023-168-scaled.jpg" alt="Grouse Games 2023" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/EA-Games-2023-107-scaled.jpg" alt="Grouse Games 2023" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/EA-Games-2023-44-scaled.jpg" alt="Grouse Games 2023" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/EA-Games-2023-66-scaled.jpg" alt="Grouse Games 2023" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO06489_SS100_A4.5_FL16_ISO5000.jpg" alt="Grouse Games" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2024/11/NO03227_SS60_A4.5_FL28_ISO3200-1.webp" alt="Grouse Games" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gsg-carousel-nav">
+          <span class="gsg-carousel-counter"></span>
+          <button class="gsg-carousel-btn" data-dir="prev">&#8592;</button>
+          <button class="gsg-carousel-btn" data-dir="next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsg-section gsg-section-alt">
+    <div class="gsg-wrap">
+      <div class="gsg-section-header">
+        <h2 class="gsg-section-title">Events.</h2>
+        <span class="gsg-section-meta">Butchery, wellness workshops &amp; more</span>
+      </div>
+      <div class="gsg-carousel">
+        <div class="gsg-carousel-track-wrap">
+          <div class="gsg-carousel-track">
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO07922_SS160_A4.5_FL28_ISO3200.jpg" alt="Event" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO05534_SS250_A6.3_FL29_ISO2000-scaled.jpg" alt="Event" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO08009_SS60_A2.8_FL28_ISO1000-1-scaled.jpg" alt="Event" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO07916_SS100_A2.8_FL75_ISO1600-scaled.jpg" alt="Event" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO05685_SS200_A5.6_FL32_ISO4000-scaled.jpg" alt="Event" loading="lazy"></div>
+            <div class="gsg-carousel-slide"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2025/11/NO05509_SS250_A5.6_FL28_ISO1250.jpg" alt="Event" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gsg-carousel-nav">
+          <span class="gsg-carousel-counter"></span>
+          <button class="gsg-carousel-btn" data-dir="prev">&#8592;</button>
+          <button class="gsg-carousel-btn" data-dir="next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gsg-close">
+    <div class="gsg-wrap">
+      <h2>Come and see it in person.</h2>
+      <p class="gsg-close-sub">Your first session is half price.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gsg-close-btn">Book your first session, 50% off</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+document.querySelectorAll('.gsg-carousel').forEach(function(carousel) {
+  var track = carousel.querySelector('.gsg-carousel-track');
+  var slides = carousel.querySelectorAll('.gsg-carousel-slide');
+  var counter = carousel.querySelector('.gsg-carousel-counter');
+  var prevBtn = carousel.querySelector('[data-dir="prev"]');
+  var nextBtn = carousel.querySelector('[data-dir="next"]');
+  var current = 0;
+
+  function visibleCount() {
+    return window.innerWidth <= 600 ? 1 : 2;
+  }
+
+  function slideWidth() {
+    var wrap = carousel.querySelector('.gsg-carousel-track-wrap');
+    return (wrap.offsetWidth + 4) / visibleCount();
+  }
+
+  function totalPages() {
+    return Math.ceil(slides.length / visibleCount());
+  }
+
+  function goTo(index) {
+    var vis = visibleCount();
+    var max = slides.length - vis;
+    current = Math.max(0, Math.min(index, max));
+    track.style.transform = 'translateX(-' + (current * slideWidth()) + 'px)';
+    counter.textContent = (Math.floor(current / vis) + 1) + ' / ' + totalPages();
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current >= slides.length - vis;
+  }
+
+  prevBtn.addEventListener('click', function() { goTo(current - visibleCount()); });
+  nextBtn.addEventListener('click', function() { goTo(current + visibleCount()); });
+  window.addEventListener('resize', function() { goTo(0); });
+
+  goTo(0);
+});
+</script>

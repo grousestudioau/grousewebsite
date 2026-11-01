@@ -1,0 +1,11 @@
+<article class="post-card">
+<a href="{{ site.baseurl }}{{ include.post.url }}" tabindex="-1" aria-hidden="true">
+{% assign t = include.post.thumb | default: include.post.image %}{% if t %}<img class="post-card__thumb wp-post-image" src="{{ site.baseurl }}{{ t }}" alt="" loading="lazy" decoding="async">{% else %}<div class="post-card__thumb"></div>{% endif %}
+</a>
+<div class="post-card__body">
+{% assign c = include.post.categories | first %}{% if c %}<span class="post-card__cat">{{ site.data.categories[c] | default: c }}</span>{% endif %}
+<h2><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h2>
+<p class="post-card__excerpt">{{ include.post.excerpt | strip_html | truncatewords: 24, "&hellip;" }}</p>
+<a class="post-card__more" href="{{ site.baseurl }}{{ include.post.url }}">Read more &rarr;</a>
+</div>
+</article>
