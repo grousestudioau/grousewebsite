@@ -330,24 +330,23 @@ document.getElementById('gctContactForm').addEventListener('submit', async funct
     phone:   form.phone.value,
     goal:    form.goal.value,
     message: form.message.value,
-    _gotcha: form.company.value,
-    _subject: 'New contact form submission: ' + form.name.value
+    company: form.company.value
   };
 
   try {
-    var endpoint = '{{ site.contact_form_endpoint }}';
-    if (!endpoint) throw new Error('Form endpoint not set');
-    var res = await fetch(endpoint, {
+    // text/plain keeps this a simple request, which Google Apps Script requires (no CORS preflight).
+    var res = await fetch('{{ site.contact_form_endpoint }}', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(data)
     });
-    if (res.ok) {
+    var json = await res.json();
+    if (json.ok) {
       status.className = 'gct-form-status success';
       status.textContent = "Thanks, we'll be in touch soon.";
       form.reset();
     } else {
-      throw new Error('Something went wrong.');
+      throw new Error(json.message || 'Something went wrong.');
     }
   } catch (err) {
     status.className = 'gct-form-status error';

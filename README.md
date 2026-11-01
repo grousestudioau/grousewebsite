@@ -37,8 +37,12 @@ Set `sitemap: false` on a page to keep it out of the sitemap. Add `redirect_from
 
 ## Go live on the domain
 
-In `_config.yml` set `baseurl: ""` and `preview: false`, set `contact_form_endpoint`, and add a `CNAME` file containing `grousestudio.au`. Then point DNS at GitHub. Preview mode blocks search engines and switches off analytics and pixels.
+In `_config.yml` set `baseurl: ""` and `preview: false`, and add a `CNAME` file containing `grousestudio.au`. Then point DNS at GitHub. Preview mode blocks search engines and switches off analytics and pixels.
 
-## Credits
+## Contact form
+
+The form posts to a Google Apps Script under josh@grousestudio.au, which emails hello@grousestudio.au. Source: `_tools/contact-form.gs`. The URL is `contact_form_endpoint` in `_config.yml`.
+
+## Images
 
 Everything in `wp-content/` is kept at its old WordPress path so existing image links keep working.
