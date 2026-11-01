@@ -1,9 +1,8 @@
 title: Grouse Studio
 description: Small-group strength training in Hawthorn East, Melbourne.
 url: https://grousestudio.au
-# PREVIEW MODE. To go live on the domain: set baseurl to "", set preview to false, add the CNAME file.
-baseurl: /grousewebsite
-preview: true
+baseurl: ""
+preview: false
 # Google Apps Script that emails contact form messages. Source: _tools/contact-form.gs
 contact_form_endpoint: "https://script.google.com/macros/s/AKfycbzXEU1eeKMOC-AsGSzTfjxv9qedAXjprIBwVScNbUDtFOJ-rZH0bNFXkAHv6HaF_Ld8/exec"
 timezone: Australia/Melbourne
