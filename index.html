@@ -114,7 +114,7 @@ h1, h2, h3 {
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  height: 100vh; height: 100svh; min-height: 560px;
+  min-height: 100vh; min-height: 100svh;
   background: var(--navy); color: var(--paper);
   overflow: hidden;
   display: flex; align-items: flex-end;
@@ -126,12 +126,12 @@ h1, h2, h3 {
 .hero .video video.playing { opacity: 1; }
 .hero .shade {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(45,48,71,0.1) 0%, rgba(35,38,57,0.4) 55%, rgba(35,38,57,0.94) 100%);
+  background: linear-gradient(180deg, rgba(35,38,57,0.82) 0%, rgba(35,38,57,0.35) 14%, rgba(45,48,71,0.12) 24%, rgba(35,38,57,0.4) 55%, rgba(35,38,57,0.94) 100%);
 }
 .hero .inner {
   position: relative; z-index: 2;
   width: 100%; max-width: 1280px;
-  margin: 0 auto; padding: 0 26px 148px;
+  margin: 0 auto; padding: calc(var(--hdr-h, 74px) + 40px) 26px 148px;
 }
 .hero h1 { font-size: clamp(44px, 8.4vw, 122px); color: var(--white); max-width: 12ch; }
 .hero h1 .out { color: var(--orange); }
@@ -280,8 +280,8 @@ a.more:hover { transform: translateX(5px); }
 /* ---------- ridge walk (horizontal) ---------- */
 #ridge { position: relative; }
 #ridge .pin {
-  position: sticky; top: 0;
-  height: 100vh;
+  position: sticky; top: var(--hdr-h, 74px);
+  height: calc(100vh - var(--hdr-h, 74px));
   overflow: hidden;
   background: var(--navy-deep);
 }
@@ -626,7 +626,7 @@ footer a:hover { color: var(--paper); }
           <p>Every Grouse coach has done hard things themselves. When they write your program, they&#8217;re drawing on what they&#8217;ve actually done.</p>
           <img decoding="async" class="art-trail" src="{{ site.baseurl }}/wp-content/uploads/2026/07/art-trail.png" alt="">
         </div>
-        <div class="panel shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/07/guides-01-bush-trail.jpg" alt="Trail running single file through bush"><span class="cap">Trail run, single file</span></div>
+        <div class="panel shot"><a href="{{ site.baseurl }}/coaches/"><img decoding="async" loading="lazy" src="{{ site.baseurl }}/wp-content/uploads/2025/06/Josh_2025_Square.jpg" alt="Josh Chiodo"></a><span class="cap">Josh Chiodo, head coach and founder</span></div><div class="panel shot"><a href="{{ site.baseurl }}/coaches/"><img decoding="async" loading="lazy" src="{{ site.baseurl }}/wp-content/uploads/2025/06/Ben_2025_Square-scaled.jpg" alt="Ben Plowman"></a><span class="cap">Ben Plowman, head coach and owner</span></div><div class="panel shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/07/guides-01-bush-trail.jpg" alt="Trail running single file through bush"><span class="cap">Trail run, single file</span></div>
         <div class="panel shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/07/guides-02-rock-climb.jpg" alt="You Yangs Ultra"><span class="cap">You Yangs Ultra</span></div>
         <div class="panel shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/07/guides-03-spartan.jpg" alt="Three finishers with Spartan medals"><span class="cap">Spartan, finished</span></div>
         <div class="panel shot"><img decoding="async" src="{{ site.baseurl }}/wp-content/uploads/2026/07/guides-04-coastal.jpg" alt="Running a coastal sand track"><span class="cap">Coastal track</span></div>
@@ -763,18 +763,20 @@ footer a:hover { color: var(--paper); }
   const ridge = document.getElementById('ridge');
   const track = document.getElementById('ridge-track');
   const mobileRidge = () => window.innerWidth <= 820;
+  const hdr = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hdr-h')) || 74;
+  const pinH = () => vh() - hdr();
 
   function ridgeSize() {
     if (mobileRidge()) { ridge.style.height = ''; track.style.transform = ''; return; }
     const overflow = Math.max(track.scrollWidth - window.innerWidth, 0);
-    ridge.style.height = (vh() + overflow) + 'px';
+    ridge.style.height = (pinH() + overflow) + 'px';
   }
   function ridgeUpdate() {
     if (mobileRidge()) return;
-    const total = ridge.offsetHeight - vh();
+    const total = ridge.offsetHeight - pinH();
     if (total <= 0) return;
     const r = ridge.getBoundingClientRect();
-    const p = clamp(-r.top / total, 0, 1);
+    const p = clamp((hdr() - r.top) / total, 0, 1);
     const overflow = Math.max(track.scrollWidth - window.innerWidth, 0);
     track.style.transform = 'translate3d(' + (-p * overflow) + 'px, 0, 0)';
   }
