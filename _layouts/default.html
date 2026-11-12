@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 {% if page.seo_head %}{{ page.seo_head }}{% else %}{% seo %}{% endif %}
 {% if site.preview %}<meta name="robots" content="noindex, nofollow">{% endif %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap">
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="preconnect" href="https://p.typekit.net" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+{% include fonts.html %}
 <link rel="stylesheet" href="https://use.typekit.net/ccu5clg.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/grouse.css">
 {% include generated/favicons.html %}
