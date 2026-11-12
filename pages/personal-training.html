@@ -1,0 +1,318 @@
+---
+layout: "page"
+title: "Personal Training in Hawthorn East"
+description: "1-on-1 personal training at Grouse Studio, 26 Victoria Rd, Hawthorn East. Private sessions with Josh or Ben and a program written for your goal."
+permalink: "/personal-training/"
+image: /assets/pages/pt-hero.jpg
+body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-responsive wp-theme-grouse"
+---
+
+<style>
+.gsn{
+  --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;--navy-deep:#232639;
+  --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#4F5E72;--light:#98A5B3;--rule:rgba(45,48,71,.14);
+  font-family:'Barlow',sans-serif!important;color:#2D3047!important;
+  font-size:17px!important;line-height:1.65!important;-webkit-font-smoothing:antialiased;
+}
+.gsn *,.gsn *::before,.gsn *::after{box-sizing:border-box;}
+.gsn h1,.gsn h2,.gsn h3{font-family:"geom-graphic",'Barlow',sans-serif!important;
+  font-weight:700!important;line-height:1.08!important;text-transform:uppercase!important;
+  letter-spacing:.01em!important;color:var(--navy)!important;margin:0!important;padding:0!important;}
+.gsn h1{font-size:clamp(2rem,4.2vw,3rem)!important;}
+.gsn h2{font-size:clamp(1.5rem,2.7vw,2.1rem)!important;}
+.gsn h3{font-size:1.1rem!important;}
+.gsn p{margin:0!important;}
+.gsn img{max-width:100%!important;height:auto!important;display:block!important;}
+.gsn .gsn-wrap{max-width:1100px!important;margin:0 auto!important;padding:0 40px!important;}
+.gsn .gsn-wrap-narrow{max-width:720px!important;margin:0 auto!important;padding:0 40px!important;}
+@media(max-width:768px){.gsn .gsn-wrap,.gsn .gsn-wrap-narrow{padding:0 24px!important;}}
+.gsn section{padding:84px 0!important;}
+@media(max-width:768px){.gsn section{padding:56px 0!important;}}
+
+.gsn .gsn-plate{display:inline-block!important;background:var(--navy)!important;color:var(--bg)!important;
+  font-family:"geom-graphic",sans-serif!important;font-weight:600!important;font-size:.78rem!important;
+  letter-spacing:.14em!important;text-transform:uppercase!important;padding:7px 26px 7px 16px!important;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)!important;
+  transform:rotate(-1.2deg)!important;margin-bottom:18px!important;}
+.gsn .gsn-btn{display:inline-block!important;background:var(--orange)!important;color:#232639!important;
+  font-size:1rem!important;font-weight:600!important;text-decoration:none!important;padding:15px 32px!important;
+  border-radius:3px!important;transition:background .2s!important;}
+.gsn .gsn-btn:hover{background:#FF8A5C!important;color:#232639!important;}
+
+/* hero */
+.gsn .gsn-hero{position:relative!important;background:var(--navy)!important;
+  padding:116px 0 72px!important;overflow:hidden!important;}
+.gsn .gsn-hero-bg{position:absolute!important;inset:0!important;
+  background-image:url('{{ site.baseurl }}/assets/pages/pt-hero.jpg')!important;
+  background-size:cover!important;background-position:center top!important;opacity:.20!important;}
+.gsn .gsn-hero .gsn-wrap{position:relative!important;}
+.gsn .gsn-hero .gsn-plate{background:var(--orange)!important;color:#232639!important;}
+.gsn .gsn-hero h1{color:#fff!important;margin-bottom:14px!important;max-width:760px!important;}
+.gsn .gsn-hero h1 em{font-style:normal!important;color:var(--orange)!important;}
+.gsn .gsn-hero-sub{font-size:1.1rem!important;line-height:1.6!important;
+  color:rgba(255,255,255,.72)!important;max-width:580px!important;margin-bottom:30px!important;}
+.gsn .gsn-hero-meta{display:flex!important;gap:24px!important;flex-wrap:wrap!important;margin-top:26px!important;}
+.gsn .gsn-hero-meta span{font-family:'Space Mono',monospace!important;font-size:.78rem!important;
+  letter-spacing:.05em!important;text-transform:uppercase!important;
+  color:rgba(255,255,255,.55)!important;display:flex!important;align-items:center!important;gap:8px!important;}
+.gsn .gsn-hero-meta span::before{content:''!important;width:9px!important;height:9px!important;
+  border-radius:50%!important;border:2px solid var(--orange)!important;flex-shrink:0!important;}
+@media(max-width:768px){.gsn .gsn-hero{padding:104px 0 60px!important;}
+  .gsn .gsn-hero .gsn-btn{width:100%!important;text-align:center!important;}}
+
+/* what a session is like */
+.gsn .gsn-get{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gsn .gsn-get .gsn-plate{background:var(--navy)!important;color:var(--bg)!important;}
+.gsn .gsn-get h2{margin-bottom:40px!important;}
+.gsn .gsn-get-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important;}
+@media(max-width:768px){.gsn .gsn-get-grid{grid-template-columns:1fr!important;}}
+.gsn .gsn-get-card{background:#fff!important;border:1px solid var(--rule)!important;
+  border-radius:4px!important;padding:36px 30px!important;position:relative!important;}
+.gsn .gsn-get-card::before{content:''!important;position:absolute!important;top:-9px!important;left:26px!important;
+  width:15px!important;height:24px!important;border-radius:3px 4px 3px 5px!important;
+  background:var(--orange)!important;transform:rotate(-4deg)!important;}
+.gsn .gsn-get-num{display:block!important;font-family:'Space Mono',monospace!important;
+  font-size:.78rem!important;letter-spacing:.1em!important;text-transform:uppercase!important;
+  color:var(--light)!important;margin-bottom:14px!important;}
+.gsn .gsn-get-card h3{margin-bottom:10px!important;}
+.gsn .gsn-get-card p{font-size:1rem!important;color:var(--mid)!important;}
+.gsn .gsn-get-card strong{color:var(--navy)!important;}
+
+/* made for after birth */
+.gsn .gsn-expect{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.gsn .gsn-expect-inner{display:grid!important;grid-template-columns:1fr 1fr!important;
+  gap:64px!important;align-items:center!important;}
+@media(max-width:768px){.gsn .gsn-expect-inner{grid-template-columns:1fr!important;gap:40px!important;}}
+.gsn .gsn-expect h2{margin-bottom:8px!important;}
+.gsn .gsn-expect h2 em{font-style:normal!important;color:#A93A0E!important;}
+.gsn .gsn-expect-list{list-style:none!important;margin:28px 0 0!important;padding:0!important;}
+.gsn .gsn-expect-list li{padding:22px 0!important;border-bottom:1px solid var(--rule)!important;
+  display:grid!important;grid-template-columns:38px 1fr!important;gap:16px!important;align-items:start!important;}
+.gsn .gsn-expect-list li:first-child{border-top:1px solid var(--rule)!important;}
+.gsn .gsn-expect-list li:last-child{border-bottom:none!important;padding-bottom:0!important;}
+.gsn .gsn-step-num{font-family:'Space Mono',monospace!important;
+  font-size:.95rem!important;font-weight:500!important;color:var(--orange)!important;padding-top:3px!important;}
+.gsn .gsn-expect-list li h3{font-size:1.05rem!important;margin-bottom:6px!important;line-height:1.35!important;}
+.gsn .gsn-expect-list li p{font-size:1rem!important;color:var(--mid)!important;}
+.gsn .gsn-expect-img{border-radius:4px!important;overflow:hidden!important;aspect-ratio:4/5!important;position:relative!important;}
+.gsn .gsn-expect-img::after{content:''!important;position:absolute!important;inset:0!important;
+  box-shadow:inset 0 0 34px rgba(35,38,57,.28)!important;border-radius:4px!important;pointer-events:none!important;}
+.gsn .gsn-expect-img img{width:100%!important;height:100%!important;object-fit:cover!important;}
+@media(max-width:768px){.gsn .gsn-expect-img{aspect-ratio:4/3!important;order:-1!important;}}
+
+/* ways in — offer cards */
+.gsn .gsn-offer{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
+.gsn .gsn-offer .gsn-plate{background:var(--navy)!important;color:var(--bg)!important;}
+.gsn .gsn-offer-head{margin-bottom:40px!important;}
+.gsn .gsn-offer-head h2{margin-bottom:12px!important;}
+.gsn .gsn-offer-head p{font-size:1.05rem!important;color:var(--mid)!important;max-width:560px!important;}
+.gsn .gsn-offer-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;}
+@media(max-width:768px){.gsn .gsn-offer-grid{grid-template-columns:1fr!important;}}
+.gsn .gsn-offer-card{border-radius:4px!important;padding:36px 30px!important;
+  display:flex!important;flex-direction:column!important;}
+.gsn .gsn-offer-card-feat{background:var(--navy)!important;color:#fff!important;}
+.gsn .gsn-offer-card-light{background:#fff!important;border:1px solid var(--rule)!important;color:var(--navy)!important;}
+.gsn .gsn-offer-tier{display:block!important;font-family:"geom-graphic",sans-serif!important;font-size:.8rem!important;
+  font-weight:600!important;letter-spacing:.14em!important;text-transform:uppercase!important;
+  color:#A93A0E!important;margin-bottom:14px!important;}
+.gsn .gsn-offer-card-feat .gsn-offer-tier{color:rgba(255,255,255,.8)!important;}
+.gsn .gsn-offer-price{font-family:"geom-graphic",sans-serif!important;font-size:2.7rem!important;font-weight:700!important;
+  line-height:1!important;color:var(--navy)!important;margin-bottom:22px!important;}
+.gsn .gsn-offer-card-feat .gsn-offer-price{color:#fff!important;}
+.gsn .gsn-offer-period{display:block!important;font-family:'Space Mono',monospace!important;font-size:.78rem!important;
+  letter-spacing:.04em!important;text-transform:uppercase!important;color:var(--light)!important;margin-bottom:22px!important;}
+.gsn .gsn-offer-card-feat .gsn-offer-period{color:rgba(255,255,255,.6)!important;}
+.gsn .gsn-offer-card p{font-size:1rem!important;line-height:1.7!important;color:var(--mid)!important;
+  margin-bottom:26px!important;flex:1!important;}
+.gsn .gsn-offer-card-feat p{color:rgba(255,255,255,.72)!important;}
+.gsn .gsn-offer-card p strong{color:var(--navy)!important;font-weight:600!important;}
+.gsn .gsn-offer-card-feat p strong{color:#fff!important;}
+.gsn .gsn-offer-btn{display:block!important;text-align:center!important;font-size:.95rem!important;font-weight:600!important;
+  text-decoration:none!important;padding:14px 24px!important;border-radius:3px!important;transition:.2s!important;}
+.gsn .gsn-offer-btn-orange{background:var(--orange)!important;color:#232639!important;}
+.gsn .gsn-offer-btn-orange:hover{background:#FF8A5C!important;color:#232639!important;}
+.gsn .gsn-offer-btn-outline{background:transparent!important;color:var(--navy)!important;border:1px solid rgba(45,48,71,.3)!important;}
+.gsn .gsn-offer-btn-outline:hover{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important;}
+
+/* details + faq */
+.gsn .gsn-details{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
+.gsn .gsn-details .gsn-plate{background:var(--navy)!important;color:var(--bg)!important;}
+.gsn .gsn-details h2{margin-bottom:32px!important;}
+.gsn .gsn-details-row{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important;margin-bottom:44px!important;}
+@media(max-width:768px){.gsn .gsn-details-row{grid-template-columns:1fr!important;}}
+.gsn .gsn-detail{background:#fff!important;border:1px solid var(--rule)!important;border-radius:4px!important;padding:26px 28px!important;}
+.gsn .gsn-detail-label{display:block!important;font-family:'Space Mono',monospace!important;font-size:.72rem!important;
+  letter-spacing:.1em!important;text-transform:uppercase!important;color:var(--mid)!important;margin-bottom:10px!important;}
+.gsn .gsn-detail-val{font-family:"geom-graphic",'Barlow',sans-serif!important;font-weight:700!important;
+  text-transform:uppercase!important;font-size:1.15rem!important;color:var(--navy)!important;line-height:1.15!important;}
+.gsn .gsn-perks{background:#fff!important;border:1px solid var(--rule)!important;border-radius:4px!important;
+  padding:26px 28px!important;margin-bottom:44px!important;}
+.gsn .gsn-perks .gsn-detail-label{margin-bottom:10px!important;}
+.gsn .gsn-perks p{font-size:1rem!important;line-height:1.7!important;color:var(--mid)!important;}
+.gsn .gsn-faq-item{padding:24px 0!important;border-bottom:1px solid var(--rule)!important;}
+.gsn .gsn-faq-item:first-of-type{border-top:1px solid var(--rule)!important;}
+.gsn .gsn-faq-q{font-family:"geom-graphic",sans-serif!important;font-weight:700!important;text-transform:uppercase!important;
+  font-size:1rem!important;letter-spacing:.02em!important;color:var(--navy)!important;margin-bottom:8px!important;}
+.gsn .gsn-faq-a{font-size:1rem!important;line-height:1.7!important;color:var(--mid)!important;}
+.gsn .gsn-faq-a a{color:#A93A0E!important;text-decoration:none!important;}
+
+/* close */
+.gsn .gsn-close{background:var(--navy)!important;text-align:center!important;}
+.gsn .gsn-close h2{color:#fff!important;max-width:560px!important;margin:0 auto 12px!important;}
+.gsn .gsn-close h2 em{font-style:normal!important;color:var(--orange)!important;}
+.gsn .gsn-close p{font-size:1.05rem!important;color:rgba(255,255,255,.55)!important;max-width:460px!important;margin:0 auto 32px!important;}
+.gsn .gsn-close-link{display:inline-block!important;margin-top:40px!important;
+  font-size:.92rem!important;color:rgba(255,255,255,.6)!important;text-decoration:none!important;}
+.gsn .gsn-close-link:hover{color:#fff!important;}
+@media(max-width:768px){.gsn .gsn-close .gsn-btn{width:100%!important;max-width:400px!important;}}
+</style>
+
+<div class="gsn">
+
+  <section class="gsn-hero">
+    <div class="gsn-hero-bg"></div>
+    <div class="gsn-wrap">
+      <span class="gsn-plate">Personal training</span>
+      <h1>Train one-on-one in <em>Hawthorn East.</em></h1>
+      <p class="gsn-hero-sub">Private sessions with Josh or Ben at our studio on Victoria Road. Your coach writes your program around the thing you're training for, then checks in between sessions to keep it on track.</p>
+      <a href="{{ site.baseurl }}/contact/" class="gsn-btn">Ask about 1-on-1 training</a>
+      <div class="gsn-hero-meta">
+        <span>Private sessions</span>
+        <span>Your own program</span>
+        <span>Hawthorn East</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gsn-get">
+    <div class="gsn-wrap">
+      <span class="gsn-plate">What you get</span>
+      <h2>Your goal sets the plan.</h2>
+      <div class="gsn-get-grid">
+        <div class="gsn-get-card">
+          <h3>Private sessions</h3>
+          <p>You train with your coach and nobody else. They watch <strong>every set and every rep</strong>, and the session moves at your pace.</p>
+        </div>
+        <div class="gsn-get-card">
+          <h3>A program written for you</h3>
+          <p>Your coach builds your training around your goal, your week and your history, and <strong>changes it as you go</strong>.</p>
+        </div>
+        <div class="gsn-get-card">
+          <h3>Check-ins between sessions</h3>
+          <p>Someone keeps track of your goal across the year. Your coach <strong>checks in between sessions</strong> so the plan keeps up with your life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gsn-expect">
+    <div class="gsn-wrap">
+      <div class="gsn-expect-inner">
+        <div>
+          <span class="gsn-plate">Who it's for</span>
+          <h2>When a group class <em>isn't enough.</em></h2>
+          <ul class="gsn-expect-list">
+            <li>
+              <span class="gsn-step-num">01</span>
+              <div>
+                <h3>You've got a date on the calendar</h3>
+                <p>A race, a trek, a season, or a deadline of your own. Your coach plans backwards from the date.</p>
+              </div>
+            </li>
+            <li>
+              <span class="gsn-step-num">02</span>
+              <div>
+                <h3>You'd rather start privately</h3>
+                <p>New to lifting, or coming back after a long break? Learn the movements one-on-one and build from there.</p>
+              </div>
+            </li>
+            <li>
+              <span class="gsn-step-num">03</span>
+              <div>
+                <h3>You've got something to work around</h3>
+                <p>An old injury, shift work, a sport you play on weekends. Tell your coach and they'll plan around it, and explain why each change is there.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="gsn-expect-img">
+          <img loading="lazy" decoding="async" width="1200" height="800" src="{{ site.baseurl }}/assets/pages/pt-floor.jpg" alt="The training floor at Grouse Studio, Hawthorn East">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gsn-offer">
+    <div class="gsn-wrap">
+      <div class="gsn-offer-head">
+        <span class="gsn-plate">Your coach</span>
+        <h2>Train with Josh or Ben.</h2>
+        <p>Both own Grouse, write the programming, and train on the floor most days of the week.</p>
+      </div>
+      <div class="gsn-offer-grid">
+
+        <div class="gsn-offer-card gsn-offer-card-feat">
+          <span class="gsn-offer-tier">Head Coach &amp; Founder</span>
+          <div class="gsn-offer-price">Josh</div>
+          <p>Trains for ultra marathons, marathons, Spartans and trail runs, and lifts as much as he runs. A good fit if you're <strong>training for an endurance event</strong> or want your running and strength work to support each other.</p>
+          <a href="{{ site.baseurl }}/contact/" class="gsn-offer-btn gsn-offer-btn-orange">Ask about training with Josh</a>
+        </div>
+
+        <div class="gsn-offer-card gsn-offer-card-light">
+          <span class="gsn-offer-tier">Head Coach &amp; Owner</span>
+          <div class="gsn-offer-price">Ben</div>
+          <p>An Exercise Science degree and a decade of basketball. Calm and methodical. He'll <strong>spot what's off in your movement</strong> and explain how to fix it.</p>
+          <a href="{{ site.baseurl }}/contact/" class="gsn-offer-btn gsn-offer-btn-outline">Ask about training with Ben</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="gsn-details">
+    <div class="gsn-wrap">
+      <span class="gsn-plate">The details</span>
+      <h2>Before you get in touch.</h2>
+      <div class="gsn-details-row">
+        <div class="gsn-detail">
+          <span class="gsn-detail-label">Where</span>
+          <div class="gsn-detail-val">26 Victoria Rd<br>Hawthorn East</div>
+        </div>
+        <div class="gsn-detail">
+          <span class="gsn-detail-label">Who</span>
+          <div class="gsn-detail-val">Josh or<br>Ben</div>
+        </div>
+        <div class="gsn-detail">
+          <span class="gsn-detail-label">When</span>
+          <div class="gsn-detail-val">Booked with<br>your coach</div>
+        </div>
+      </div>
+
+      <div class="gsn-faq-item">
+        <p class="gsn-faq-q">How much does it cost?</p>
+        <p class="gsn-faq-a">That depends on how often you train and what you need. Send us a message and we'll talk it through.</p>
+      </div>
+      <div class="gsn-faq-item">
+        <p class="gsn-faq-q">How is this different from Unlimited + Coaching?</p>
+        <p class="gsn-faq-a">Unlimited + Coaching gives you the same coach and check-ins, but you train in group sessions on the Strength Loop. One-on-one adds private sessions and a program written only for you. <a href="{{ site.baseurl }}/memberships/">Compare memberships</a>.</p>
+      </div>
+      <div class="gsn-faq-item">
+        <p class="gsn-faq-q">Do I need any experience?</p>
+        <p class="gsn-faq-a">No. Your coach starts with how you move now and builds from there.</p>
+      </div>
+      <div class="gsn-faq-item">
+        <p class="gsn-faq-q">I'm a PT looking for space to train my own clients.</p>
+        <p class="gsn-faq-a">You can hire the studio by the hour. <a href="{{ site.baseurl }}/rent/">See studio hire</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gsn-close">
+    <div class="gsn-wrap">
+      <h2>Tell us what you're <em>training for.</em></h2>
+      <p>Send a message and Josh or Ben will get back to you.</p>
+      <a href="{{ site.baseurl }}/contact/" class="gsn-btn">Ask about 1-on-1 training</a>
+    </div>
+  </section>
+
+</div>
