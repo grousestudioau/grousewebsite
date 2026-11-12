@@ -8,6 +8,11 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 ---
 
 <style>
+/* Hallmark · built: the project · redesign: polish · theme: the site's own system (kept) · scope: page */
+/* Hallmark · waived 54, 67, 63, 38iii, 48, 7a · plates, tracked labels, meta strip, orange heading word and colour vars are the site-wide Grouse system, shared with every page */
+.gsn h1,.gsn h2,.gsn h3{text-wrap:balance!important;}
+.gsn p{text-wrap:pretty;}
+.gsn .gsn-btn,.gsn .gsn-offer-btn{white-space:nowrap!important;}
 .gsn{
   --orange:#FF6633;--orange-dk:#EA5420;--navy:#2D3047;--navy-deep:#232639;
   --bg:#F4F1EA;--bg-warm:#EBE7DC;--mid:#4F5E72;--light:#98A5B3;--rule:rgba(45,48,71,.14);
@@ -64,8 +69,8 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 .gsn .gsn-get{background:var(--bg)!important;border-bottom:1px solid var(--rule)!important;}
 .gsn .gsn-get .gsn-plate{background:var(--navy)!important;color:var(--bg)!important;}
 .gsn .gsn-get h2{margin-bottom:40px!important;}
-.gsn .gsn-get-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important;}
-@media(max-width:768px){.gsn .gsn-get-grid{grid-template-columns:1fr!important;}}
+.gsn .gsn-get-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;}
+@media(max-width:768px){.gsn .gsn-get-grid{grid-template-columns:minmax(0,1fr)!important;}}
 .gsn .gsn-get-card{background:#fff!important;border:1px solid var(--rule)!important;
   border-radius:4px!important;padding:36px 30px!important;position:relative!important;}
 .gsn .gsn-get-card::before{content:''!important;position:absolute!important;top:-9px!important;left:26px!important;
@@ -80,9 +85,9 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 
 /* made for after birth */
 .gsn .gsn-expect{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
-.gsn .gsn-expect-inner{display:grid!important;grid-template-columns:1fr 1fr!important;
+.gsn .gsn-expect-inner{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
   gap:64px!important;align-items:center!important;}
-@media(max-width:768px){.gsn .gsn-expect-inner{grid-template-columns:1fr!important;gap:40px!important;}}
+@media(max-width:768px){.gsn .gsn-expect-inner{grid-template-columns:minmax(0,1fr)!important;gap:40px!important;}}
 .gsn .gsn-expect h2{margin-bottom:8px!important;}
 .gsn .gsn-expect h2 em{font-style:normal!important;color:#A93A0E!important;}
 .gsn .gsn-expect-list{list-style:none!important;margin:28px 0 0!important;padding:0!important;}
@@ -106,8 +111,8 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 .gsn .gsn-offer-head{margin-bottom:40px!important;}
 .gsn .gsn-offer-head h2{margin-bottom:12px!important;}
 .gsn .gsn-offer-head p{font-size:1.05rem!important;color:var(--mid)!important;max-width:560px!important;}
-.gsn .gsn-offer-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;}
-@media(max-width:768px){.gsn .gsn-offer-grid{grid-template-columns:1fr!important;}}
+.gsn .gsn-offer-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:16px!important;}
+@media(max-width:768px){.gsn .gsn-offer-grid{grid-template-columns:minmax(0,1fr)!important;}}
 .gsn .gsn-offer-card{border-radius:4px!important;padding:36px 30px!important;
   display:flex!important;flex-direction:column!important;}
 .gsn .gsn-offer-card-feat{background:var(--navy)!important;color:#fff!important;}
@@ -138,8 +143,8 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 .gsn .gsn-details{background:var(--bg-warm)!important;border-bottom:1px solid var(--rule)!important;}
 .gsn .gsn-details .gsn-plate{background:var(--navy)!important;color:var(--bg)!important;}
 .gsn .gsn-details h2{margin-bottom:32px!important;}
-.gsn .gsn-details-row{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important;margin-bottom:44px!important;}
-@media(max-width:768px){.gsn .gsn-details-row{grid-template-columns:1fr!important;}}
+.gsn .gsn-details-row{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin-bottom:44px!important;}
+@media(max-width:768px){.gsn .gsn-details-row{grid-template-columns:minmax(0,1fr)!important;}}
 .gsn .gsn-detail{background:#fff!important;border:1px solid var(--rule)!important;border-radius:4px!important;padding:26px 28px!important;}
 .gsn .gsn-detail-label{display:block!important;font-family:'Space Mono',monospace!important;font-size:.72rem!important;
   letter-spacing:.1em!important;text-transform:uppercase!important;color:var(--mid)!important;margin-bottom:10px!important;}
@@ -174,8 +179,8 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
     <div class="gsn-wrap">
       <span class="gsn-plate">Over 55</span>
       <h1>Strength training <em>after 55.</em></h1>
-      <p class="gsn-hero-sub">Plenty of our members are over 55. They train in the same coached sessions as everyone else, with the weights and movements set to suit them.</p>
-      <a href="{{ site.baseurl }}/first-session/" class="gsn-btn">Book your first session, 50% off</a>
+      <p class="gsn-hero-sub">Plenty of our members are over 55, in the same coached sessions as everyone else.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gsn-btn">First session, half price</a>
       <div class="gsn-hero-meta">
         <span>Coached every session</span>
         <span>Groups capped at 12</span>
@@ -191,15 +196,15 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
       <div class="gsn-get-grid">
         <div class="gsn-get-card">
           <h3>Muscle and bone</h3>
-          <p>Australia's guidelines for people over 65 recommend <strong>strength exercises two or three times a week</strong> to help keep muscle and bone strong.</p>
+          <p>Australia’s guidelines for over-65s: <strong>strength exercises two or three times a week</strong> to keep muscle and bone strong.</p>
         </div>
         <div class="gsn-get-card">
           <h3>Balance and falls</h3>
-          <p>The World Health Organization recommends people over 65 train <strong>balance and strength on three or more days a week</strong> to help prevent falls.</p>
+          <p>The WHO recommends over-65s train <strong>balance and strength three or more days a week</strong> to help prevent falls.</p>
         </div>
         <div class="gsn-get-card">
           <h3>The rest of your life</h3>
-          <p>Carrying the shopping, climbing stairs, getting up off the floor. We train the movements behind them: <strong>squats, hinges, presses, pulls and carries</strong>.</p>
+          <p>Stairs, shopping, getting up off the floor. We train the movements behind them: <strong>squats, hinges, presses, pulls and carries</strong>.</p>
         </div>
       </div>
       <p style="margin-top:20px;font-size:.85rem;opacity:.75">Sources: <a href="https://www.health.gov.au/health-topics/physical-activity-and-exercise/physical-activity-and-exercise-guidelines-for-all-australians/for-older-australians" rel="noopener" target="_blank">Australian Government Department of Health</a>, <a href="https://www.who.int/publications/i/item/9789240015128" rel="noopener" target="_blank">WHO guidelines on physical activity (2020)</a>.</p>
@@ -217,28 +222,28 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
               <span class="gsn-step-num">01</span>
               <div>
                 <h3>Every exercise scales</h3>
-                <p>A coach runs every session and adjusts each exercise to you. If a full squat doesn't suit your knees, you'll squat to a box. You set the weight.</p>
+                <p>A coach runs every session and adjusts each exercise to you. If a full squat doesn’t suit your knees, you’ll squat to a box. You set the weight.</p>
               </div>
             </li>
             <li>
               <span class="gsn-step-num">02</span>
               <div>
                 <h3>Small groups</h3>
-                <p>We cap groups at 12, so your coach can see how you're moving and step in when something needs changing.</p>
+                <p>We cap groups at 12, so your coach can see how you’re moving and step in when something needs changing.</p>
               </div>
             </li>
             <li>
               <span class="gsn-step-num">03</span>
               <div>
                 <h3>Start light, build up</h3>
-                <p>Haven't trained in years? Start at a level that feels easy and add a little over time. The health guidelines give the same advice.</p>
+                <p>Haven’t trained in years? Start at a level that feels easy and add a little over time. The health guidelines give the same advice.</p>
               </div>
             </li>
             <li>
               <span class="gsn-step-num">04</span>
               <div>
                 <h3>Tell us what to work around</h3>
-                <p>A joint replacement, arthritis, a dodgy shoulder. Tell your coach before your first session. If you have a heart condition or you're not sure, check with your GP first.</p>
+                <p>A joint replacement, arthritis, a dodgy shoulder. Tell your coach before your first session. If you have a heart condition or you’re not sure, check with your GP first.</p>
               </div>
             </li>
           </ul>
@@ -255,7 +260,7 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
       <div class="gsn-offer-head">
         <span class="gsn-plate">Where to start</span>
         <h2>Pick a way in.</h2>
-        <p>Most people start in a group Strength session. If you'd rather learn the basics privately first, start one-on-one.</p>
+        <p>Most people start in a group Strength session. If you’d rather learn the basics privately first, start one-on-one.</p>
       </div>
       <div class="gsn-offer-grid">
 
@@ -267,9 +272,9 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
         </div>
 
         <div class="gsn-offer-card gsn-offer-card-light">
-          <span class="gsn-offer-tier">One-on-one</span>
+          <span class="gsn-offer-tier">Personalised</span>
           <div class="gsn-offer-price">1-on-1</div>
-          <p>Train privately with Josh or Ben on a program written for you, then <strong>join the group when you're ready</strong>.</p>
+          <p>Train privately with Josh or Ben on a program written for you, then <strong>join the group when you’re ready</strong>.</p>
           <a href="{{ site.baseurl }}/personal-training/" class="gsn-offer-btn gsn-offer-btn-outline">See personal training</a>
         </div>
 
@@ -298,15 +303,11 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
 
       <div class="gsn-faq-item">
         <p class="gsn-faq-q">Am I too old to start?</p>
-        <p class="gsn-faq-a">No. Australia's guidelines say people should do some physical activity whatever their age. Start light and build from there.</p>
+        <p class="gsn-faq-a">No. Australia’s guidelines say people should do some physical activity whatever their age. Start light and build from there.</p>
       </div>
       <div class="gsn-faq-item">
         <p class="gsn-faq-q">Will I be the oldest one there?</p>
         <p class="gsn-faq-a">Probably not. Plenty of our members are over 55.</p>
-      </div>
-      <div class="gsn-faq-item">
-        <p class="gsn-faq-q">Do I need to be fit already?</p>
-        <p class="gsn-faq-a">No. You don't need any experience. Tell the coach it's your first time and they'll walk you through the session.</p>
       </div>
       <div class="gsn-faq-item">
         <p class="gsn-faq-q">What does it cost after the first session?</p>
@@ -322,8 +323,8 @@ body_class: "wp-singular page-template-default page wp-custom-logo wp-embed-resp
   <section class="gsn-close">
     <div class="gsn-wrap">
       <h2>Come in for <em>one session.</em></h2>
-      <p>Half price and coached from the first minute. Tell the coach it's your first time.</p>
-      <a href="{{ site.baseurl }}/first-session/" class="gsn-btn">Book your first session, 50% off</a>
+      <p>Half price and coached from the first minute. Tell the coach it’s your first time.</p>
+      <a href="{{ site.baseurl }}/first-session/" class="gsn-btn">First session, half price</a>
     </div>
   </section>
 
