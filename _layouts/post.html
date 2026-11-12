@@ -8,7 +8,7 @@ body_class: single single-post
 <div class="post-meta">
 {{ page.date | date: "%B %-d, %Y" }}{% for c in page.categories %}{% if forloop.first %} &middot; {% else %}, {% endif %}<a href="{{ site.baseurl }}/category/{{ c }}/" rel="category tag">{{ site.data.categories[c] | default: c }}</a>{% endfor %}
 </div>
-{% if page.image %}<img class="post-feat wp-post-image" src="{{ site.baseurl }}{{ page.image }}" alt="" decoding="async">{% endif %}
+{% if page.image %}<img class="post-feat wp-post-image" src="{{ site.baseurl }}{{ page.image }}"{% if page.image_w %} width="{{ page.image_w }}" height="{{ page.image_h }}"{% endif %} alt="" decoding="async" fetchpriority="high">{% endif %}
 <div class="post-body">
 {{ content }}
 </div>
