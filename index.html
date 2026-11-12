@@ -74,7 +74,7 @@ body {
 }
 html { overflow-x: clip; }
 h1, h2, h3 {
-  font-family: "geom-graphic", sans-serif;
+  font-family: "geom-graphic","geom-fb",sans-serif;
   font-weight: 700;
   line-height: 1.05;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ h1, h2, h3 {
   width: 100%; max-width: 1280px;
   margin: 0 auto; padding: calc(var(--hdr-h, 74px) + 40px) 26px 148px;
 }
-.hero h1 { font-size: clamp(44px, 8.4vw, 122px); color: var(--white); max-width: 12ch; }
+.hero h1 { font-size: clamp(44px, 8.4vw, 122px); color: var(--white); max-width: 10.284em; }
 .hero h1 .out { color: var(--orange); }
 .hero .sub { margin-top: 22px; font-size: 19px; max-width: 66ch; color: rgba(244,241,234,0.88); }
 .hero .startline { margin-top: 44px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
@@ -162,7 +162,7 @@ h1, h2, h3 {
 .signplate {
   display: inline-block;
   background: var(--navy); color: var(--paper);
-  font-family: "geom-graphic", sans-serif; font-weight: 600;
+  font-family: "geom-graphic","geom-fb",sans-serif; font-weight: 600;
   font-size: 13.5px; letter-spacing: 0.14em; text-transform: uppercase;
   padding: 7px 26px 7px 16px;
   clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
@@ -172,7 +172,7 @@ h1, h2, h3 {
 #destinations h2 { font-size: var(--h-section); margin: 22px 0 6vh; }
 #destinations h2 .out { color: var(--orange-text); }
 #destinations .goal {
-  font-family: "geom-graphic", sans-serif;
+  font-family: "geom-graphic","geom-fb",sans-serif;
   font-weight: 600; text-transform: uppercase;
   font-size: clamp(21px, 2.9vw, 36px);
   line-height: 1.15;
@@ -250,7 +250,7 @@ h1, h2, h3 {
 
 /* ---------- creed (full-screen statement; trail passes through) ---------- */
 #creed { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
-#creed h2 { font-size: clamp(38px, 6.6vw, 96px); text-align: center; max-width: 14ch; padding: 0 26px; }
+#creed h2 { font-size: clamp(38px, 6.6vw, 96px); text-align: center; max-width: 11.998em; padding: 0 26px; }
 #creed h2 .dot { color: var(--orange); }
 
 /* ---------- the loop ---------- */
@@ -433,7 +433,7 @@ a.more:hover { transform: translateX(5px); }
   padding: 5px 12px; border-radius: 3px;
 }
 #pricing .card h3 { font-size: 21px; }
-#pricing .price { font-family: "geom-graphic", sans-serif; font-weight: 700; font-size: 46px; margin: 12px 0 2px; line-height: 1; }
+#pricing .price { font-family: "geom-graphic","geom-fb",sans-serif; font-weight: 700; font-size: 46px; margin: 12px 0 2px; line-height: 1; }
 #pricing .per { font-family: 'Space Mono', monospace; font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--slate); }
 #pricing .card.featured .per { color: var(--slate-light); }
 #pricing ul { list-style: none; margin: 26px 0 30px; flex: 1; }
@@ -495,7 +495,7 @@ a.more:hover { transform: translateX(5px); }
   transition: opacity 0.9s ease;
 }
 #summit.arrived .summit-img { opacity: 1; }
-#summit h2 { font-size: clamp(34px, 5.4vw, 64px); color: var(--white); max-width: 20ch; margin: 0 auto 20px; }
+#summit h2 { font-size: clamp(34px, 5.4vw, 64px); color: var(--white); max-width: 17.14em; margin: 0 auto 20px; }
 #summit h2 em { font-style: normal; color: var(--orange); }
 #summit p { color: rgba(244,241,234,0.82); font-size: 19px; margin-bottom: 40px; }
 
@@ -597,7 +597,7 @@ footer a:hover { color: var(--paper); }
         <path id="loop-path" d="M370.5 220.0L368.3 233.0L367.2 246.0L364.0 258.6L360.1 271.0L354.9 282.9L348.3 294.1L342.3 305.7L335.0 316.5L327.5 327.5L317.1 335.7L306.2 343.0L294.6 349.3L282.9 355.0L270.9 359.9L258.7 364.3L246.1 367.8L233.1 369.7L220.0 370.6L206.9 369.9L193.8 368.5L180.9 366.0L168.4 361.6L156.5 356.1L144.8 350.2L133.5 343.6L122.7 336.0L113.4 326.6L104.9 316.6L97.0 306.2L90.3 294.9L84.0 283.4L78.5 271.5L74.3 259.0L72.1 246.1L70.8 233.1L71.6 220.0L71.4 207.0L73.6 194.2L76.2 181.5L79.4 168.8L84.1 156.6L90.4 145.2L97.8 134.4L105.3 123.7L113.6 113.6L122.7 104.1L133.2 96.1L144.5 89.2L156.3 83.4L168.7 79.0L181.2 75.3L193.9 72.1L206.9 70.3L220.0 70.1L233.0 71.5L245.9 73.2L258.4 76.6L271.1 79.5L283.2 84.4L294.5 91.0L305.7 97.7L315.7 105.9L325.6 114.4L333.7 124.6L342.2 134.4L349.8 145.1L356.0 156.6L359.9 169.1L364.0 181.4L367.5 194.0L369.3 206.9Z" fill="none" stroke="#ff6633" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="220" cy="220" r="140" fill="none" stroke="rgba(244,241,234,0.14)" stroke-width="1"/>
         <image class="needle" href="{{ site.baseurl }}/wp-content/uploads/2026/07/art-compass-loop.png" x="70" y="70" width="300" height="300"/>
-        <g font-family='"geom-graphic", sans-serif' font-weight="700">
+        <g font-family='"geom-graphic","geom-fb",sans-serif' font-weight="700">
           <rect x="213" y="58" width="14" height="22" rx="3" fill="#ff6633" transform="rotate(-5 220 69)"/>
           <text x="220" y="42" text-anchor="middle" fill="#ffffff" font-size="19" letter-spacing="1">STRENGTH</text>
           <rect x="363" y="209" width="14" height="22" rx="3" fill="#ff6633" transform="rotate(4 370 220)"/>
