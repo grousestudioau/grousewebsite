@@ -181,10 +181,16 @@ h1, h2, h3 {
 }
 #destinations .goals .goal:first-child { border-top: 2px solid var(--ink); }
 #destinations .goal em { font-style: normal; color: var(--orange-text); }
-#destinations .goals .goal:nth-child(2) { transition-delay: 0.08s; }
-#destinations .goals .goal:nth-child(3) { transition-delay: 0.16s; }
-#destinations .goals .goal:nth-child(4) { transition-delay: 0.24s; }
-#destinations .goals .goal:nth-child(5) { transition-delay: 0.32s; }
+/* staggered reveal via sibling-index(), with :nth-child() fallback for older browsers */
+@supports (transition-delay: calc(sibling-index() * 0.08s)) {
+  #destinations .goals .goal { transition-delay: calc((sibling-index() - 1) * 0.08s); }
+}
+@supports not (transition-delay: calc(sibling-index() * 0.08s)) {
+  #destinations .goals .goal:nth-child(2) { transition-delay: 0.08s; }
+  #destinations .goals .goal:nth-child(3) { transition-delay: 0.16s; }
+  #destinations .goals .goal:nth-child(4) { transition-delay: 0.24s; }
+  #destinations .goals .goal:nth-child(5) { transition-delay: 0.32s; }
+}
 #destinations .outro { margin-top: 5vh; font-size: 19px; color: var(--slate); max-width: 560px; }
 #destinations .outro strong { color: var(--ink); }
 
@@ -391,9 +397,14 @@ a.more:hover { transform: translateX(5px); }
   font-size: 19.5px;
 }
 #checkpoint .fits .fit:first-child { border-top: 2px solid var(--ink); }
-#checkpoint .fits .fit:nth-child(2) { transition-delay: 0.08s; }
-#checkpoint .fits .fit:nth-child(3) { transition-delay: 0.16s; }
-#checkpoint .fits .fit:nth-child(4) { transition-delay: 0.24s; }
+@supports (transition-delay: calc(sibling-index() * 0.08s)) {
+  #checkpoint .fits .fit { transition-delay: calc((sibling-index() - 1) * 0.08s); }
+}
+@supports not (transition-delay: calc(sibling-index() * 0.08s)) {
+  #checkpoint .fits .fit:nth-child(2) { transition-delay: 0.08s; }
+  #checkpoint .fits .fit:nth-child(3) { transition-delay: 0.16s; }
+  #checkpoint .fits .fit:nth-child(4) { transition-delay: 0.24s; }
+}
 #checkpoint .fit .blaze {
   flex: 0 0 15px; width: 15px; height: 24px;
   border-radius: 3px 4px 3px 5px;
@@ -839,7 +850,7 @@ footer a:hover { color: var(--paper); }
     const ns = 'http://www.w3.org/2000/svg';
     let defs = svg.querySelector('defs');
     if (!defs) { defs = document.createElementNS(ns, 'defs'); svg.insertBefore(defs, svg.firstChild); }
-    defs.innerHTML = '';
+    defs.replaceChildren();
     const g = document.createElementNS(ns, 'linearGradient');
     g.setAttribute('id', 'tg-base');
     g.setAttribute('gradientUnits', 'userSpaceOnUse');
