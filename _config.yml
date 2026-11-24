@@ -25,3 +25,4 @@ feed:
   path: feed.xml
 exclude:
   - README.md
+  - CLAUDE.md
